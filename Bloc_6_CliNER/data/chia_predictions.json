@@ -1,0 +1,1204 @@
+[
+    {
+        "id": "NCT00351611",
+        "entities": [
+            {
+                "type": "Condition",
+                "text": "eye diseases"
+            },
+            {
+                "type": "Condition",
+                "text": "glaucoma"
+            },
+            {
+                "type": "Drug",
+                "text": "pregabalin"
+            },
+            {
+                "type": "Condition",
+                "text": "partial seizure"
+            },
+            {
+                "type": "Condition",
+                "text": "Epilepsy"
+            },
+            {
+                "type": "Condition",
+                "text": "partial seizure"
+            },
+            {
+                "type": "Drug",
+                "text": "antiepileptic drugs"
+            },
+            {
+                "type": "Value",
+                "text": "1 to 3"
+            }
+        ]
+    },
+    {
+        "id": "NCT01639664",
+        "entities": [
+            {
+                "type": "Measurement",
+                "text": "Age"
+            },
+            {
+                "type": "Qualifier",
+                "text": "less than"
+            },
+            {
+                "type": "Value",
+                "text": "14 years"
+            },
+            {
+                "type": "Condition",
+                "text": "Pregnancy"
+            },
+            {
+                "type": "Measurement",
+                "text": "Estimated life expectancy"
+            },
+            {
+                "type": "Condition",
+                "text": "comorbidities"
+            },
+            {
+                "type": "Temporal",
+                "text": "less than 90 days"
+            },
+            {
+                "type": "Condition",
+                "text": "relative or absolute contraindications"
+            },
+            {
+                "type": "Procedure",
+                "text": "CPFA"
+            },
+            {
+                "type": "Observation",
+                "text": "Admission from an other ICU"
+            },
+            {
+                "type": "Temporal",
+                "text": "more than 24 hours"
+            },
+            {
+                "type": "Observation",
+                "text": "Absence of informed consent"
+            },
+            {
+                "type": "Condition",
+                "text": "septic shock"
+            }
+        ]
+    },
+    {
+        "id": "NCT00183885",
+        "entities": [
+            {
+                "type": "Procedure",
+                "text": "chemotherapy"
+            },
+            {
+                "type": "Condition",
+                "text": "unresectable disease"
+            },
+            {
+                "type": "Condition",
+                "text": "active or uncontrolled infection"
+            },
+            {
+                "type": "Condition",
+                "text": "HIV infection"
+            },
+            {
+                "type": "Condition",
+                "text": "active hepatitis B"
+            },
+            {
+                "type": "Drug",
+                "text": "lamivudine"
+            },
+            {
+                "type": "Condition",
+                "text": "active hepatitis C"
+            },
+            {
+                "type": "Measurement",
+                "text": "liver tests"
+            },
+            {
+                "type": "Condition",
+                "text": "psychiatric disorders"
+            },
+            {
+                "type": "Condition",
+                "text": "Pregnant"
+            },
+            {
+                "type": "Condition",
+                "text": "lactating"
+            },
+            {
+                "type": "Condition",
+                "text": "severe concurrent disease"
+            },
+            {
+                "type": "Condition",
+                "text": "Unresectable, histologically confirmed hepatocellular carcinoma"
+            },
+            {
+                "type": "Procedure",
+                "text": "biopsy"
+            },
+            {
+                "type": "Procedure",
+                "text": "resection"
+            },
+            {
+                "type": "Measurement",
+                "text": "alpha-fetoprotein"
+            },
+            {
+                "type": "Value",
+                "text": "500 ng/mL"
+            },
+            {
+                "type": "Condition",
+                "text": "hepatic inflammatory process"
+            },
+            {
+                "type": "Measurement",
+                "text": "blood sample"
+            },
+            {
+                "type": "Condition",
+                "text": "measurable disease"
+            },
+            {
+                "type": "Procedure",
+                "text": "radiation therapy"
+            },
+            {
+                "type": "Measurement",
+                "text": "Zubrod performance status"
+            },
+            {
+                "type": "Measurement",
+                "text": "life expectancy"
+            },
+            {
+                "type": "Measurement",
+                "text": "granulocyte count"
+            },
+            {
+                "type": "Measurement",
+                "text": "segmented neutrophils"
+            },
+            {
+                "type": "Measurement",
+                "text": "bands"
+            },
+            {
+                "type": "Measurement",
+                "text": "hemoglobin level"
+            },
+            {
+                "type": "Measurement",
+                "text": "platelet count"
+            },
+            {
+                "type": "Condition",
+                "text": "hypersplenism"
+            },
+            {
+                "type": "Measurement",
+                "text": "creatinine clearance"
+            },
+            {
+                "type": "Measurement",
+                "text": "serum bilirubin"
+            },
+            {
+                "type": "Condition",
+                "text": "ascites"
+            },
+            {
+                "type": "Drug",
+                "text": "diuretics"
+            }
+        ]
+    },
+    {
+        "id": "NCT01410890",
+        "entities": [
+            {
+                "type": "Person",
+                "text": "patient"
+            },
+            {
+                "type": "Person",
+                "text": "Investigator"
+            },
+            {
+                "type": "Person",
+                "text": "parent/legal guardian"
+            },
+            {
+                "type": "Condition",
+                "text": "GAA enzyme deficiency"
+            },
+            {
+                "type": "Measurement",
+                "text": "skin"
+            },
+            {
+                "type": "Measurement",
+                "text": "blood"
+            },
+            {
+                "type": "Measurement",
+                "text": "muscle tissue"
+            },
+            {
+                "type": "Condition",
+                "text": "GAA gene mutations"
+            },
+            {
+                "type": "Condition",
+                "text": "Pompe disease"
+            },
+            {
+                "type": "Measurement",
+                "text": "body weight"
+            },
+            {
+                "type": "Measurement",
+                "text": "blood loss"
+            },
+            {
+                "type": "Value",
+                "text": "3 percent"
+            },
+            {
+                "type": "Measurement",
+                "text": "total blood volume"
+            },
+            {
+                "type": "Temporal",
+                "text": "4 weeks"
+            },
+            {
+                "type": "Value",
+                "text": "1 percent"
+            },
+            {
+                "type": "Qualifier",
+                "text": "female"
+            },
+            {
+                "type": "Condition",
+                "text": "pregnancy"
+            },
+            {
+                "type": "Measurement",
+                "text": "urine beta-human chorionic gonadotropin"
+            },
+            {
+                "type": "Drug",
+                "text": "contraception"
+            },
+            {
+                "type": "Drug",
+                "text": "alglucosidase alfa"
+            },
+            {
+                "type": "Temporal",
+                "text": "6 months"
+            }
+        ]
+    },
+    {
+        "id": "NCT01728194",
+        "entities": [
+            {
+                "type": "Condition",
+                "text": "Psychotic depression"
+            },
+            {
+                "type": "Reference_point",
+                "text": "DSM-IV"
+            },
+            {
+                "type": "Observation",
+                "text": "delusions"
+            },
+            {
+                "type": "Measurement",
+                "text": "SCID-R score higher than 2"
+            },
+            {
+                "type": "Condition",
+                "text": "High suicide risk"
+            },
+            {
+                "type": "Condition",
+                "text": "Axis I psychiatric disorder"
+            },
+            {
+                "type": "Condition",
+                "text": "unipolar major depression"
+            },
+            {
+                "type": "Condition",
+                "text": "substance abuse"
+            },
+            {
+                "type": "Condition",
+                "text": "generalized anxiety disorder"
+            },
+            {
+                "type": "Condition",
+                "text": "bipolar disorder"
+            },
+            {
+                "type": "Condition",
+                "text": "hypomania"
+            },
+            {
+                "type": "Condition",
+                "text": "dysthymia"
+            },
+            {
+                "type": "Condition",
+                "text": "Dementia"
+            },
+            {
+                "type": "Condition",
+                "text": "Mild Cognitive Impairment"
+            },
+            {
+                "type": "Condition",
+                "text": "MCI"
+            },
+            {
+                "type": "Condition",
+                "text": "Acute or severe medical illness"
+            },
+            {
+                "type": "Condition",
+                "text": "delirium"
+            },
+            {
+                "type": "Condition",
+                "text": "metastatic cancer"
+            },
+            {
+                "type": "Condition",
+                "text": "decompensated cardiac, liver or kidney failure"
+            },
+            {
+                "type": "Procedure",
+                "text": "major surgery"
+            },
+            {
+                "type": "Condition",
+                "text": "stroke"
+            },
+            {
+                "type": "Condition",
+                "text": "myocardial infarction"
+            },
+            {
+                "type": "Drug",
+                "text": "reserpine"
+            },
+            {
+                "type": "Drug",
+                "text": "alpha-methyl-dopa"
+            },
+            {
+                "type": "Drug",
+                "text": "steroids"
+            },
+            {
+                "type": "Drug",
+                "text": "sympathomimetics"
+            },
+            {
+                "type": "Condition",
+                "text": "Neurological brain disease"
+            },
+            {
+                "type": "Procedure",
+                "text": "electroconvulsive therapy"
+            },
+            {
+                "type": "Drug",
+                "text": "citalopram"
+            },
+            {
+                "type": "Drug",
+                "text": "escitalopram"
+            },
+            {
+                "type": "Procedure",
+                "text": "psychotherapy"
+            },
+            {
+                "type": "Procedure",
+                "text": "MRI scanning"
+            },
+            {
+                "type": "Device",
+                "text": "cardiac pacemaker"
+            },
+            {
+                "type": "Device",
+                "text": "cardiac stent"
+            },
+            {
+                "type": "Condition",
+                "text": "claustrophobia"
+            },
+            {
+                "type": "Measurement",
+                "text": "visual acuity < 20/70"
+            },
+            {
+                "type": "Condition",
+                "text": "Color blindness"
+            },
+            {
+                "type": "Measurement",
+                "text": "Age: 60-85 years"
+            },
+            {
+                "type": "Condition",
+                "text": "Major depression"
+            },
+            {
+                "type": "Measurement",
+                "text": "Age of onset of first episode = 50 years"
+            },
+            {
+                "type": "Measurement",
+                "text": "24-Item Hamilton Depression Rating Scale (HDRS) = 20"
+            }
+        ]
+    },
+    {
+        "id": "NCT01735955",
+        "entities": [
+            {
+                "type": "Drug",
+                "text": "nilotinib"
+            },
+            {
+                "type": "Condition",
+                "text": "unacceptable toxicity"
+            },
+            {
+                "type": "Procedure",
+                "text": "study procedures"
+            },
+            {
+                "type": "Observation",
+                "text": "withdrawal of consent"
+            },
+            {
+                "type": "Drug",
+                "text": "study medication"
+            },
+            {
+                "type": "Procedure",
+                "text": "combination therapy"
+            },
+            {
+                "type": "Drug",
+                "text": "medications"
+            },
+            {
+                "type": "Condition",
+                "text": "prolong the QT interval"
+            },
+            {
+                "type": "Condition",
+                "text": "Torsade de Pointes"
+            },
+            {
+                "type": "Temporal",
+                "text": "one week"
+            },
+            {
+                "type": "Condition",
+                "text": "Pregnant"
+            },
+            {
+                "type": "Condition",
+                "text": "nursing (lactating)"
+            },
+            {
+                "type": "Condition",
+                "text": "pregnancy"
+            },
+            {
+                "type": "Measurement",
+                "text": "hcG laboratory test"
+            },
+            {
+                "type": "Qualifier",
+                "text": "positive"
+            },
+            {
+                "type": "Condition",
+                "text": "Women of child-bearing potential"
+            },
+            {
+                "type": "Procedure",
+                "text": "contraception"
+            },
+            {
+                "type": "Temporal",
+                "text": "30 days"
+            },
+            {
+                "type": "Procedure",
+                "text": "Oncology Clinical Development & Medical Affairs study"
+            },
+            {
+                "type": "Person",
+                "text": "investigator"
+            },
+            {
+                "type": "Procedure",
+                "text": "scheduled visits"
+            },
+            {
+                "type": "Procedure",
+                "text": "treatment plans"
+            },
+            {
+                "type": "Observation",
+                "text": "Written informed consent"
+            }
+        ]
+    },
+    {
+        "id": "NCT01801072",
+        "entities": [
+            {
+                "type": "Condition",
+                "text": "seizures"
+            },
+            {
+                "type": "Temporal",
+                "text": "within last 10 years"
+            },
+            {
+                "type": "Condition",
+                "text": "epilepsy"
+            },
+            {
+                "type": "Condition",
+                "text": "stroke"
+            },
+            {
+                "type": "Drug",
+                "text": "anti-epileptic"
+            },
+            {
+                "type": "Drug",
+                "text": "keppra"
+            },
+            {
+                "type": "Drug",
+                "text": "dilantin"
+            },
+            {
+                "type": "Drug",
+                "text": "tegretol"
+            },
+            {
+                "type": "Drug",
+                "text": "lamictal"
+            },
+            {
+                "type": "Drug",
+                "text": "topamax"
+            },
+            {
+                "type": "Condition",
+                "text": "Brain tumor"
+            },
+            {
+                "type": "Person",
+                "text": "Pregnant or nursing woman"
+            },
+            {
+                "type": "Drug",
+                "text": "levetiracetam"
+            },
+            {
+                "type": "Qualifier",
+                "text": "allergy"
+            },
+            {
+                "type": "Person",
+                "text": "Adult"
+            },
+            {
+                "type": "Measurement",
+                "text": "18 years"
+            },
+            {
+                "type": "Condition",
+                "text": "intracranial aneurysm"
+            },
+            {
+                "type": "Condition",
+                "text": "rupture"
+            },
+            {
+                "type": "Procedure",
+                "text": "surgical repair"
+            }
+        ]
+    },
+    {
+        "id": "NCT01794793",
+        "entities": [
+            {
+                "type": "Drug",
+                "text": "pasireotide"
+            },
+            {
+                "type": "Condition",
+                "text": "unacceptable toxicity"
+            },
+            {
+                "type": "Procedure",
+                "text": "study procedures"
+            },
+            {
+                "type": "Condition",
+                "text": "non-compliance"
+            },
+            {
+                "type": "Condition",
+                "text": "Pregnant"
+            },
+            {
+                "type": "Condition",
+                "text": "nursing (lactating)"
+            },
+            {
+                "type": "Measurement",
+                "text": "hCG laboratory test"
+            },
+            {
+                "type": "Condition",
+                "text": "Female sterilization"
+            },
+            {
+                "type": "Procedure",
+                "text": "surgical bilateral oophorectomy"
+            },
+            {
+                "type": "Procedure",
+                "text": "hysterectomy"
+            },
+            {
+                "type": "Procedure",
+                "text": "tubal ligation"
+            },
+            {
+                "type": "Measurement",
+                "text": "hormone level assessment"
+            },
+            {
+                "type": "Procedure",
+                "text": "Male sterilization"
+            },
+            {
+                "type": "Procedure",
+                "text": "vasectomized"
+            },
+            {
+                "type": "Drug",
+                "text": "hormonal methods of contraception"
+            },
+            {
+                "type": "Device",
+                "text": "intrauterine device (IUD)"
+            },
+            {
+                "type": "Device",
+                "text": "intrauterine system (IUS)"
+            },
+            {
+                "type": "Device",
+                "text": "Condom"
+            },
+            {
+                "type": "Device",
+                "text": "Occlusive cap diaphragm"
+            },
+            {
+                "type": "Device",
+                "text": "cervical/vault caps"
+            },
+            {
+                "type": "Drug",
+                "text": "spermicidal foam/gel/film/cream/vaginal suppository"
+            },
+            {
+                "type": "Drug",
+                "text": "oral contraception"
+            },
+            {
+                "type": "Drug",
+                "text": "pasireotide s.c."
+            },
+            {
+                "type": "Drug",
+                "text": "pasireotide LAR"
+            },
+            {
+                "type": "Person",
+                "text": "Study Doctor"
+            },
+            {
+                "type": "Procedure",
+                "text": "dose injections"
+            },
+            {
+                "type": "Procedure",
+                "text": "assessments"
+            },
+            {
+                "type": "Procedure",
+                "text": "scheduled visits"
+            },
+            {
+                "type": "Procedure",
+                "text": "treatment plans"
+            },
+            {
+                "type": "Procedure",
+                "text": "Written informed consent"
+            }
+        ]
+    },
+    {
+        "id": "NCT01807897",
+        "entities": [
+            {
+                "type": "Condition",
+                "text": "acute decompensated HF"
+            },
+            {
+                "type": "Procedure",
+                "text": "Hospitalization"
+            },
+            {
+                "type": "Temporal",
+                "text": "within previous 30 days"
+            },
+            {
+                "type": "Condition",
+                "text": "myocardial infarction"
+            },
+            {
+                "type": "Procedure",
+                "text": "cardiac surgery"
+            },
+            {
+                "type": "Temporal",
+                "text": "within previous 90 days"
+            },
+            {
+                "type": "Device",
+                "text": "left ventricular assist device"
+            },
+            {
+                "type": "Procedure",
+                "text": "heart transplantation"
+            },
+            {
+                "type": "Condition",
+                "text": "hypertension"
+            },
+            {
+                "type": "Measurement",
+                "text": ">170/>110"
+            },
+            {
+                "type": "Condition",
+                "text": "diabetes"
+            },
+            {
+                "type": "Measurement",
+                "text": "HbA1c > 9.0"
+            },
+            {
+                "type": "Condition",
+                "text": "Severe renal failure"
+            },
+            {
+                "type": "Measurement",
+                "text": "estimated glomerular filtration rate <30 ml/min"
+            },
+            {
+                "type": "Condition",
+                "text": "stroke"
+            },
+            {
+                "type": "Condition",
+                "text": "Severe chronic insomnia"
+            },
+            {
+                "type": "Measurement",
+                "text": "<4 hours"
+            },
+            {
+                "type": "Condition",
+                "text": "Severe daytime sleepiness"
+            },
+            {
+                "type": "Measurement",
+                "text": "Epworth Sleepiness Scale score 18 or higher"
+            },
+            {
+                "type": "Measurement",
+                "text": "Awake resting oxyhemoglobin saturation <89%"
+            },
+            {
+                "type": "Condition",
+                "text": "Pregnancy"
+            },
+            {
+                "type": "Device",
+                "text": "positive airway pressure device"
+            },
+            {
+                "type": "Device",
+                "text": "continuous or bi-level positive airway pressure"
+            },
+            {
+                "type": "Device",
+                "text": "adaptive servo-ventilation"
+            },
+            {
+                "type": "Procedure",
+                "text": "supplemental oxygen therapy"
+            },
+            {
+                "type": "Person",
+                "text": "Veteran"
+            },
+            {
+                "type": "Measurement",
+                "text": "Age 18 years"
+            },
+            {
+                "type": "Condition",
+                "text": "chronic heart failure"
+            },
+            {
+                "type": "Qualifier",
+                "text": "American Heart Association Stage C-D"
+            },
+            {
+                "type": "Measurement",
+                "text": "LVEF <45%"
+            },
+            {
+                "type": "Drug",
+                "text": "active cardiac medications"
+            },
+            {
+                "type": "Condition",
+                "text": "central or mixed central and obstructive sleep apnea"
+            },
+            {
+                "type": "Measurement",
+                "text": "apnea-hypopnea index (AHI) 15 events per hour"
+            },
+            {
+                "type": "Measurement",
+                "text": "central AHI >5 events/hour"
+            }
+        ]
+    },
+    {
+        "id": "NCT01742117",
+        "entities": [
+            {
+                "type": "Person",
+                "text": "Patient"
+            },
+            {
+                "type": "Value",
+                "text": ">18 years of age"
+            },
+            {
+                "type": "Condition",
+                "text": "acute coronary syndrome"
+            },
+            {
+                "type": "Condition",
+                "text": "ACS"
+            },
+            {
+                "type": "Condition",
+                "text": "stable coronary artery disease"
+            },
+            {
+                "type": "Condition",
+                "text": "CAD"
+            },
+            {
+                "type": "Procedure",
+                "text": "PCI"
+            },
+            {
+                "type": "Drug",
+                "text": "dual anti-platelet therapy"
+            },
+            {
+                "type": "Procedure",
+                "text": "index PCI"
+            },
+            {
+                "type": "Measurement",
+                "text": "CYP2C19 genotype"
+            },
+            {
+                "type": "Procedure",
+                "text": "revascularization"
+            },
+            {
+                "type": "Temporal",
+                "text": "30 days"
+            },
+            {
+                "type": "Temporal",
+                "text": "12 months"
+            },
+            {
+                "type": "Drug",
+                "text": "clopidogrel"
+            },
+            {
+                "type": "Drug",
+                "text": "ticagrelor"
+            },
+            {
+                "type": "Procedure",
+                "text": "elective surgery"
+            },
+            {
+                "type": "Measurement",
+                "text": "Serum creatinine"
+            },
+            {
+                "type": "Value",
+                "text": ">2.5 mg/dL"
+            },
+            {
+                "type": "Measurement",
+                "text": "Platelet count"
+            },
+            {
+                "type": "Value",
+                "text": "<80,000"
+            },
+            {
+                "type": "Value",
+                "text": ">700,000 cells/mm3"
+            },
+            {
+                "type": "Measurement",
+                "text": "white blood cell count"
+            },
+            {
+                "type": "Value",
+                "text": "<3,000 cells/mm3"
+            },
+            {
+                "type": "Condition",
+                "text": "intracranial hemorrhage"
+            },
+            {
+                "type": "Condition",
+                "text": "hypersensitivity"
+            },
+            {
+                "type": "Condition",
+                "text": "pregnant"
+            },
+            {
+                "type": "Condition",
+                "text": "lactating"
+            },
+            {
+                "type": "Procedure",
+                "text": "organ transplant"
+            },
+            {
+                "type": "Drug",
+                "text": "chemotherapy"
+            },
+            {
+                "type": "Drug",
+                "text": "immunosuppressive therapy"
+            },
+            {
+                "type": "Condition",
+                "text": "immunosuppressive or autoimmune disease"
+            },
+            {
+                "type": "Condition",
+                "text": "human immunodeficiency virus"
+            },
+            {
+                "type": "Condition",
+                "text": "systemic lupus erythematous"
+            },
+            {
+                "type": "Drug",
+                "text": "oral anticoagulation therapy"
+            },
+            {
+                "type": "Drug",
+                "text": "vitamin K antagonist"
+            },
+            {
+                "type": "Drug",
+                "text": "direct thrombin inhibitor"
+            },
+            {
+                "type": "Drug",
+                "text": "Factor Xa inhibitor"
+            },
+            {
+                "type": "Drug",
+                "text": "simvastatin"
+            },
+            {
+                "type": "Drug",
+                "text": "lovastatin"
+            },
+            {
+                "type": "Drug",
+                "text": "CYP3A4 inhibitors"
+            },
+            {
+                "type": "Drug",
+                "text": "atazanavir"
+            },
+            {
+                "type": "Drug",
+                "text": "clarithromycin"
+            },
+            {
+                "type": "Drug",
+                "text": "indinavir"
+            },
+            {
+                "type": "Drug",
+                "text": "itraconazole"
+            },
+            {
+                "type": "Drug",
+                "text": "ketoconazole"
+            },
+            {
+                "type": "Drug",
+                "text": "nefazodone"
+            },
+            {
+                "type": "Drug",
+                "text": "nelfinavir"
+            },
+            {
+                "type": "Drug",
+                "text": "ritonavir"
+            },
+            {
+                "type": "Drug",
+                "text": "saquinavir"
+            },
+            {
+                "type": "Drug",
+                "text": "telithromycin"
+            },
+            {
+                "type": "Drug",
+                "text": "voriconazole"
+            },
+            {
+                "type": "Drug",
+                "text": "carbamazepine"
+            },
+            {
+                "type": "Drug",
+                "text": "dexamethasone"
+            },
+            {
+                "type": "Drug",
+                "text": "phenobarbital"
+            },
+            {
+                "type": "Drug",
+                "text": "phenytoin"
+            },
+            {
+                "type": "Drug",
+                "text": "rifampin"
+            },
+            {
+                "type": "Drug",
+                "text": "rifapentine"
+            },
+            {
+                "type": "Condition",
+                "text": "cancer"
+            },
+            {
+                "type": "Condition",
+                "text": "severe hepatic impairment"
+            },
+            {
+                "type": "Condition",
+                "text": "bleeding diathesis"
+            },
+            {
+                "type": "Condition",
+                "text": "coagulopathy"
+            },
+            {
+                "type": "Condition",
+                "text": "active pathological bleeding"
+            },
+            {
+                "type": "Condition",
+                "text": "gastrointestinal (GI) bleeding"
+            },
+            {
+                "type": "Drug",
+                "text": "aspirin"
+            },
+            {
+                "type": "Value",
+                "text": "100 mg"
+            },
+            {
+                "type": "Condition",
+                "text": "substance abuse"
+            }
+        ]
+    }
+]

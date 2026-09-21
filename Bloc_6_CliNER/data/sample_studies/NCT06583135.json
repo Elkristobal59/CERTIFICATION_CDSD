@@ -1,0 +1,299 @@
+{
+    "protocolSection": {
+        "identificationModule": {
+            "nctId": "NCT06583135",
+            "orgStudyIdInfo": {
+                "id": "2012-KAEK-20-122"
+            },
+            "organization": {
+                "fullName": "Akdeniz University",
+                "class": "OTHER"
+            },
+            "briefTitle": "Effect of Motivational Interviewing on Sleep Hygiene, Sleep Quality and Quality of Life",
+            "officialTitle": "Effects Of Sleep Hygıene Educatıon And Motıvatıonal Intervıewıng On Sleep Hygıene, Sleep Qualıty And Qualıty Of Lıfe In Hemodıalysıs Patıents: A Randomızed Controlled Trıal"
+        },
+        "statusModule": {
+            "statusVerifiedDate": "2025-12",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+                "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+                "date": "2024-08-10",
+                "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+                "date": "2025-02-10",
+                "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+                "date": "2025-02-10",
+                "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2024-08-31",
+            "studyFirstSubmitQcDate": "2024-08-31",
+            "studyFirstPostDateStruct": {
+                "date": "2024-09-03",
+                "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2025-12-01",
+            "lastUpdatePostDateStruct": {
+                "date": "2025-12-03",
+                "type": "ACTUAL"
+            }
+        },
+        "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+                "type": "PRINCIPAL_INVESTIGATOR",
+                "investigatorFullName": "MELEK AVCI",
+                "investigatorTitle": "Principal Investigator",
+                "investigatorAffiliation": "Akdeniz University"
+            },
+            "leadSponsor": {
+                "name": "Akdeniz University",
+                "class": "OTHER"
+            }
+        },
+        "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+        },
+        "descriptionModule": {
+            "briefSummary": "* Sleep hygiene education and motivational interviewing have an effect on increasing sleep hygiene in individuals undergoing hemodialysis treatment\n* Sleep hygiene education and motivational interviewing have an effect on increasing sleep quality in individuals undergoing hemodialysis treatment\n* Sleep hygiene education and motivational interviewing have an effect on increasing quality of life in individuals undergoing hemodialysis treatment",
+            "detailedDescription": "After the pre-tests are applied to the patients in the intervention group, face-to-face sleep hygiene training will be given, and then 4 sessions of motivational interviews will be held within 6 weeks.\n\nThe sessions will be conducted online with each patient individually. The post-test will be applied 10 weeks after the pre-test."
+        },
+        "conditionsModule": {
+            "conditions": [
+                "Sleep Hygiene"
+            ],
+            "keywords": [
+                "Nursing",
+                "Hemodialysis",
+                "Motivational Interviewing",
+                "Sleep Hygiene",
+                "Sleep Quality",
+                "Quality of Life"
+            ]
+        },
+        "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+                "NA"
+            ],
+            "designInfo": {
+                "allocation": "RANDOMIZED",
+                "interventionModel": "PARALLEL",
+                "interventionModelDescription": "This study is a parallel group randomized controlled study",
+                "primaryPurpose": "SUPPORTIVE_CARE",
+                "maskingInfo": {
+                    "masking": "SINGLE",
+                    "maskingDescription": "Only participant masking was performed",
+                    "whoMasked": [
+                        "PARTICIPANT"
+                    ]
+                }
+            },
+            "enrollmentInfo": {
+                "count": 40,
+                "type": "ACTUAL"
+            }
+        },
+        "armsInterventionsModule": {
+            "armGroups": [
+                {
+                    "label": "Intervention Group",
+                    "type": "EXPERIMENTAL",
+                    "description": "The intervention group will be given face-to-face sleep hygiene training and and 4 online motivational interviewing will be held within 6 weeks.",
+                    "interventionNames": [
+                        "Other: Sleep hygiene education and motivational interviewing"
+                    ]
+                },
+                {
+                    "label": "Control Group",
+                    "type": "ACTIVE_COMPARATOR",
+                    "description": "The control group will receive face-to-face sleep hygiene training, routine hemodialysis treatment, and nursing care in the hemodialysis unit.",
+                    "interventionNames": [
+                        "Other: face-to-face sleep hygiene training"
+                    ]
+                }
+            ],
+            "interventions": [
+                {
+                    "type": "OTHER",
+                    "name": "Sleep hygiene education and motivational interviewing",
+                    "description": "The intervention group, will receive face-to-face sleep hygiene training and then 4 online motivational interviews will be held within 6 weeks. The online motivational interviews will be implemented in the 1st week (interview 1), 2nd week (interview 2), 4th week (interview 3), and 6th week (interview 4).",
+                    "armGroupLabels": [
+                        "Intervention Group"
+                    ]
+                },
+                {
+                    "type": "OTHER",
+                    "name": "face-to-face sleep hygiene training",
+                    "description": "The control group receive face-to-face sleep hygiene training",
+                    "armGroupLabels": [
+                        "Control Group"
+                    ]
+                }
+            ]
+        },
+        "outcomesModule": {
+            "primaryOutcomes": [
+                {
+                    "measure": "It has the effect of improving sleep hygiene.",
+                    "description": "The sleep hygiene index is a 5-point Likert-type scale consisting of 13 items, scored from 1 to 5.\n\nA score below 26 indicates good sleep hygiene, and a lower score indicates better sleep hygiene.",
+                    "timeFrame": "10 weeks"
+                },
+                {
+                    "measure": "It is effective in improving sleep quality.",
+                    "description": "The sleep quality index includes 24 questions consisting of 7 components.\n\nEvaluation, Each item of the scale is evaluated with 0-3 points. Seven \"component\" scores are created from nineteen items. The last 5 items are not included in the scoring. The total score has a value between 0-21. High values indicate poor sleep quality and high levels of sleep disturbance. A total score of 5 and above indicates poor sleep quality",
+                    "timeFrame": "10 weeks"
+                },
+                {
+                    "measure": "Has an effect on improving the quality of life",
+                    "description": "The quality of life scale consists of 36 items in 5 sub-dimensions that measure quality of life specific to kidney disease. Scores in each dimension range from 0 to 100, with higher scores indicating better health-related quality of life. A score of \"0\" indicates the worst health status, while a score of \"100\" indicates the best health status.",
+                    "timeFrame": "10 weeks"
+                }
+            ]
+        },
+        "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Patients undergoing hemodialysis at Akdeniz University Hospital\n* Having been on a routine hemodialysis program for at least 3 months,\n* Having a score of ≥ 26 according to the Sleep Hygiene Index\n* Having dialysis adequacy (KT/V and URR values within normal range)\n* Being an individual aged 18 and over\n* Not having any written or verbal communication barriers\n* Being able to use technological devices such as computers, tablets, mobile phones to conduct online motivational interviews\n* Being willing to participate in online motivational interviews\n\nExclusion Criteria:\n\n* Having a health problem that affects sleep patterns (sleep apnea, surgical operation (temporary hemodialysis catheter insertion and other surgical procedures, depression, anxiety disorder, etc.)\n* Having previously attended any motivational interview session for sleep hygiene",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+                "ADULT",
+                "OLDER_ADULT"
+            ]
+        },
+        "contactsLocationsModule": {
+            "overallOfficials": [
+                {
+                    "name": "Fatma ARIKAN",
+                    "affiliation": "Akdeniz University",
+                    "role": "STUDY_DIRECTOR"
+                }
+            ],
+            "locations": [
+                {
+                    "facility": "Akdeniz University Hospital",
+                    "city": "Antalya",
+                    "country": "Turkey (Türkiye)",
+                    "geoPoint": {
+                        "lat": 36.90812,
+                        "lon": 30.69556
+                    }
+                }
+            ]
+        },
+        "referencesModule": {
+            "references": [
+                {
+                    "pmid": "29057381",
+                    "type": "RESULT",
+                    "citation": "Ricardo AC, Goh V, Chen J, Cedillo-Couvert E, Kapella M, Prasad B, Parvathaneni S, Knutson K, Lash JP. Association of Sleep Duration, Symptoms, and Disorders with Mortality in Adults with Chronic Kidney Disease. Kidney Int Rep. 2017 Sep;2(5):866-873. doi: 10.1016/j.ekir.2017.05.002. Epub 2017 May 5."
+                },
+                {
+                    "pmid": "27608683",
+                    "type": "RESULT",
+                    "citation": "Wang R, Tang C, Chen X, Zhu C, Feng W, Li P, Lu C. Poor sleep and reduced quality of life were associated with symptom distress in patients receiving maintenance hemodialysis. Health Qual Life Outcomes. 2016 Sep 8;14(1):125. doi: 10.1186/s12955-016-0531-6."
+                },
+                {
+                    "pmid": "25645131",
+                    "type": "RESULT",
+                    "citation": "Yang B, Xu J, Xue Q, Wei T, Xu J, Ye C, Mei C, Mao Z. Non-pharmacological interventions for improving sleep quality in patients on dialysis: systematic review and meta-analysis. Sleep Med Rev. 2015 Oct;23:68-82. doi: 10.1016/j.smrv.2014.11.005. Epub 2014 Dec 10."
+                },
+                {
+                    "pmid": "16557353",
+                    "type": "RESULT",
+                    "citation": "Mastin DF, Bryson J, Corwyn R. Assessment of sleep hygiene using the Sleep Hygiene Index. J Behav Med. 2006 Jun;29(3):223-7. doi: 10.1007/s10865-006-9047-6. Epub 2006 Mar 24."
+                }
+            ]
+        },
+        "ipdSharingStatementModule": {
+            "ipdSharing": "NO"
+        }
+    },
+    "derivedSection": {
+        "miscInfoModule": {
+            "versionHolder": "2026-07-21"
+        },
+        "conditionBrowseModule": {
+            "meshes": [
+                {
+                    "id": "D000070263",
+                    "term": "Sleep Hygiene"
+                },
+                {
+                    "id": "D007319",
+                    "term": "Sleep Initiation and Maintenance Disorders"
+                }
+            ],
+            "ancestors": [
+                {
+                    "id": "D015438",
+                    "term": "Health Behavior"
+                },
+                {
+                    "id": "D001519",
+                    "term": "Behavior"
+                },
+                {
+                    "id": "D020919",
+                    "term": "Sleep Disorders, Intrinsic"
+                },
+                {
+                    "id": "D020920",
+                    "term": "Dyssomnias"
+                },
+                {
+                    "id": "D012893",
+                    "term": "Sleep Wake Disorders"
+                },
+                {
+                    "id": "D009422",
+                    "term": "Nervous System Diseases"
+                },
+                {
+                    "id": "D001523",
+                    "term": "Mental Disorders"
+                }
+            ]
+        },
+        "interventionBrowseModule": {
+            "meshes": [
+                {
+                    "id": "D062405",
+                    "term": "Motivational Interviewing"
+                }
+            ],
+            "ancestors": [
+                {
+                    "id": "D037001",
+                    "term": "Directive Counseling"
+                },
+                {
+                    "id": "D003376",
+                    "term": "Counseling"
+                },
+                {
+                    "id": "D008605",
+                    "term": "Mental Health Services"
+                },
+                {
+                    "id": "D004191",
+                    "term": "Behavioral Disciplines and Activities"
+                },
+                {
+                    "id": "D006296",
+                    "term": "Health Services"
+                },
+                {
+                    "id": "D005159",
+                    "term": "Health Care Facilities Workforce and Services"
+                }
+            ]
+        }
+    },
+    "hasResults": false
+}

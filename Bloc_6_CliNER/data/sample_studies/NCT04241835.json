@@ -1,0 +1,364 @@
+{
+    "protocolSection": {
+        "identificationModule": {
+            "nctId": "NCT04241835",
+            "orgStudyIdInfo": {
+                "id": "EZH-1201"
+            },
+            "secondaryIdInfos": [
+                {
+                    "id": "2019-003368-36",
+                    "type": "EUDRACT_NUMBER"
+                },
+                {
+                    "id": "2024-517141-13-00",
+                    "type": "CTIS"
+                }
+            ],
+            "organization": {
+                "fullName": "Ipsen",
+                "class": "INDUSTRY"
+            },
+            "briefTitle": "A Study to Compare the Blood Levels and Safety of Tazemetostat in Participants With Advanced Cancer and Moderate/Severe Liver Impairment to Participants With Advanced Cancer and Normal Liver Function",
+            "officialTitle": "A Phase I, Open-label Multi-dose Pharmacokinetic and Safety Study of Oral Tazemetostat in Subjects With Moderate and Severe Hepatic Impairment With Advanced Malignancies"
+        },
+        "statusModule": {
+            "statusVerifiedDate": "2026-04",
+            "overallStatus": "TERMINATED",
+            "whyStopped": "Ipsen decided to discontinue all active tazemetostat clinical trials.",
+            "expandedAccessInfo": {
+                "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+                "date": "2020-01-15",
+                "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+                "date": "2025-03-12",
+                "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+                "date": "2025-03-12",
+                "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2019-12-26",
+            "studyFirstSubmitQcDate": "2020-01-22",
+            "studyFirstPostDateStruct": {
+                "date": "2020-01-27",
+                "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2026-04-15",
+            "lastUpdatePostDateStruct": {
+                "date": "2026-04-16",
+                "type": "ACTUAL"
+            }
+        },
+        "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+                "type": "SPONSOR"
+            },
+            "leadSponsor": {
+                "name": "Epizyme, Inc.",
+                "class": "INDUSTRY"
+            },
+            "collaborators": [
+                {
+                    "name": "Sponsor GmbH",
+                    "class": "OTHER"
+                }
+            ]
+        },
+        "oversightModule": {
+            "isFdaRegulatedDrug": true,
+            "isFdaRegulatedDevice": false
+        },
+        "descriptionModule": {
+            "briefSummary": "This main aim of this trial will be to study the blood levels (known as pharmacokinetics) of the study drug tazemetostat.\n\nThe pharmacokinetics of the study drug in participants with advanced solid tumors and moderate or severe hepatic (liver) impairment will be compared with participants with advanced malignancies and normal hepatic function.\n\nAn advanced malignancy is a cancer that has recurred (come back) after prior treatment or hasn't controlled with treatment.\n\nThe trial will also study the safety of the study drug in participants (how well it is tolerated).",
+            "detailedDescription": "The study will be conducted in 2 parts for subjects with advanced malignancies and either normal liver function, or advanced malignancies and moderate, or severe hepatic impairment. Subjects in Part 1 of the study will receive a single oral, 800 mg dose of tazemetostat on Day 1 and Day 15. In addition, the subjects will receive tazemetostat (oral 800 mg dose) tablets to be taken twice daily from Day 5 to Day 14. Blood samples for PK analysis will be obtained on Day 1 through Day 4 and again on Day 15 through Day 18. Part 1 ends on Day 18.\n\nSubjects continuing treatment in Part 2 will receive tazemetostat (oral 800 mg dose) tablets to be taken twice daily in repeated 28-day cycles beginning on Day 19 until Investigator-assessed clinical progression per standard practice, or unacceptable toxicity, or until another discontinuation criterion is met. Subjects must have an end of study visit for safety assessment 30 days after the last dose of tazemetostat or prior to initiation of a subsequent anticancer therapy, whichever occurs first. Supplementary study conduct information not mandated to be present in this protocol is provided in the accompanying procedure manuals (i.e., laboratory, pharmacy, ECG manuals). Such manuals will provide the site personnel with administrative and detailed technical information that does not impact subject safety."
+        },
+        "conditionsModule": {
+            "conditions": [
+                "Hepatic Impairment",
+                "Advanced Malignant Solid Tumor"
+            ]
+        },
+        "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+                "PHASE1"
+            ],
+            "designInfo": {
+                "allocation": "NA",
+                "interventionModel": "SINGLE_GROUP",
+                "primaryPurpose": "TREATMENT",
+                "maskingInfo": {
+                    "masking": "NONE"
+                }
+            },
+            "enrollmentInfo": {
+                "count": 18,
+                "type": "ACTUAL"
+            }
+        },
+        "armsInterventionsModule": {
+            "armGroups": [
+                {
+                    "label": "Open label Tazemetostat",
+                    "type": "EXPERIMENTAL",
+                    "description": "Part 1:\n\nParticipants will receive a single oral 800 mg dose on day 1, and twice daily from day 5 to day 14. Participants will return to the clinical study unit on an out-patient basis from day 15 to day 18. A single oral 800 mg dose of tazemetostat will be administered on day 15.\n\nPart 2:\n\nWill begin on day 19 and participants continuing treatment in Part 2 will receive tazemetostat (oral 800 mg dose) tablets to be taken twice daily in repeated 28-day cycles.",
+                    "interventionNames": [
+                        "Drug: Tazemetostat"
+                    ]
+                }
+            ],
+            "interventions": [
+                {
+                    "type": "DRUG",
+                    "name": "Tazemetostat",
+                    "description": "Tazemetostat (EPZ-6438) in tablet form at a dose of 800 mg once daily on days 1 and 15 and twice daily on days 5 to 14 of the first 28-day cycle.\n\nParticipants may continue tazemetostat treatment at 800 mg twice daily in additional 28-day cycles until progression or unacceptable toxicity.",
+                    "armGroupLabels": [
+                        "Open label Tazemetostat"
+                    ],
+                    "otherNames": [
+                        "EPZ-6438",
+                        "IPN60200",
+                        "Tazverik®"
+                    ]
+                }
+            ]
+        },
+        "outcomesModule": {
+            "primaryOutcomes": [
+                {
+                    "measure": "To evaluate the pharmacokinetics (PK) of tazemetostat and its metabolite EPZ 6930, AUC0-t: area under the plasma concentration-time curve from time 0 to the time of the last quantifiable concentration",
+                    "description": "When administered as a single and multi-dose in subjects with advanced malignancies and moderate or severe hepatic impairment, compared with participants with advanced malignancies and normal hepatic function.",
+                    "timeFrame": "0 to 72 hours post dose on Day 1 and Day 15"
+                },
+                {
+                    "measure": "To evaluate the pharmacokinetics (PK) of tazemetostat and its metabolite EPZ 6930, AUC0-∞: area under the plasma concentration-time curve from time 0 extrapolated to infinity",
+                    "description": "When administered as a single and multi-dose in subjects with advanced malignancies and moderate or severe hepatic impairment, compared with participants with advanced malignancies and normal hepatic function",
+                    "timeFrame": "0 to 72 hours post dose on Day 1 and Day 15"
+                },
+                {
+                    "measure": "To evaluate the pharmacokinetics (PK) of tazemetostat and its metabolite EPZ 6930, AUC0-8: area under the plasma concentration-time curve from time 0 to 8 hours post dose",
+                    "description": "When administered as a single and multi-dose in subjects with advanced malignancies and moderate or severe hepatic impairment, compared with participants with advanced malignancies and normal hepatic function",
+                    "timeFrame": "0 to 8 hours post dose on Day 1 and Day 15"
+                },
+                {
+                    "measure": "To evaluate the pharmacokinetics (PK) of tazemetostat and its metabolite EPZ 6930, Cmax: observed maximum plasma concentration",
+                    "description": "When administered as a single and multi-dose in subjects with advanced malignancies and moderate or severe hepatic impairment, compared with subjects with advanced malignancies and normal hepatic function",
+                    "timeFrame": "0 to 72 hours post dose on Day 1 and Day 15"
+                },
+                {
+                    "measure": "To evaluate the pharmacokinetics (PK) of tazemetostat and its metabolite EPZ 6930, Tmax: observed time at Cmax",
+                    "description": "When administered as a single and multi-dose in subjects with advanced malignancies and moderate or severe hepatic impairment, compared with subjects with advanced malignancies and normal hepatic function",
+                    "timeFrame": "0 to 72 hours post dose on Day 1 and Day 15"
+                },
+                {
+                    "measure": "To evaluate the pharmacokinetics (PK) of tazemetostat and its metabolite EPZ 6930, t1/2: terminal elimination half-life",
+                    "description": "When administered as a single and multi-dose in subjects with advanced malignancies and moderate or severe hepatic impairment, compared with subjects with advanced malignancies and normal hepatic function",
+                    "timeFrame": "0 to 72 hours post dose on Day 1 and Day 15"
+                },
+                {
+                    "measure": "To evaluate the pharmacokinetics (PK) of tazemetostat and its metabolite EPZ 6930, fu: unbound fraction of drug in plasma",
+                    "description": "When administered as a single and multi-dose in subjects with advanced malignancies and moderate or severe hepatic impairment, compared with subjects with advanced malignancies and normal hepatic function",
+                    "timeFrame": "Pre-dose, 3 hours, 24 hours, and 72 hours post-dose"
+                }
+            ],
+            "secondaryOutcomes": [
+                {
+                    "measure": "To evaluate the number of participants with adverse events (AEs) as assessed by CTCAE v5.0",
+                    "description": "Severity of adverse events experienced by all participants with at least 1 dose or partial dose of tazemetostat will be evaluated by the Investigator based on the CTCAE, version 5.0",
+                    "timeFrame": "Through study completion, an average of 1 year"
+                }
+            ]
+        },
+        "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n1. Male or female ≥ 18 years age at the time of consent.\n2. Eastern Cooperative Oncology Group (ECOG) performance status 0 to 2.\n3. Has the ability to understand informed consent and provided signed written informed consent.\n4. Life expectancy of \\> 3 months.\n5. Histologically and/or cytologically confirmed advanced metastatic or unresectable solid tumors has progressed after treatment for which there are no standard therapies available OR histologically and/or cytologically confirmed hematological malignancies that have relapsed, or refractory disease following at least 2 standard lines of systemic therapy for which there are no standard therapies available.\n6. Must have evaluable or measurable disease.\n7. Has all prior treatment (i.e., chemotherapy, immunotherapy, radiotherapy) related clinically significant toxicities resolve to ≤ Grade 1 per NCI CTCAE, Version 5.0 or are clinically stable and not clinically significant, at time of consent.\n8. All subjects must have completed any prior chemotherapy, targeted therapy and major surgery, ≥ 28 days before study entry. For daily or weekly chemotherapy without the potential for delayed toxicity, a washout period of 14 days may be acceptable, and questions related to this can be discussed with the Medical Monitor.\n9. Has adequate hematologic (bone marrow \\[BM\\] and coagulation factors), and renal function.\n10. Able to swallow and retain orally-administered medication and without clinically significant gastrointestinal abnormalities that could alter absorption such as malabsorption syndrome or major resection of the stomach or bowels.\n11. Subjects with abnormal hepatic function will be eligible and will be grouped according to established criteria. Subjects with active hemolysis will be excluded.\n12. Manual differential with no significant morphologic abnormalities on complete blood count (CBC) testing.\n13. Male subjects must have had a successful vasectomy OR must either practice complete abstinence or agree to use a latex or synthetic condom during sexual contact with a female of childbearing potential from the first dose of study drug, during study treatment (including during dose interruptions), and for 3 months after study drug discontinuation.\n14. Females of childbearing potential must have a negative serum pregnancy test at screening and within 24 hours prior to the first dose of study drug. All females will be considered of childbearing potential unless they are naturally postmenopausal or have been sterilized.\n15. Females of childbearing potential (FCBP) must either practice complete abstinence or agree to use a highly effective method of contraception beginning at least 28 days prior to the first dose of study drug, during study treatment (including during dose interruptions), and for 6 months after study drug discontinuation.\n16. Has a QT interval corrected by Fridericia's formula (QTcF) ≤480 msec.\n17. Subjects with diagnosed human immunodeficiency virus (HIV) are eligible to participate in the study if they meet established criteria.\n\nExclusion Criteria:\n\n1. Prior exposure to tazemetostat or other inhibitor(s) of EZH2.\n2. Symptomatic or untreated leptomeningeal or brain metastases or spinal cord compression as documented by CT or MRI scan, analysis of cerebrospinal fluid or neurological exam. Subjects with primary glioblastoma multiforme are excluded.\n3. Clinically significant bleeding diathesis or coagulopathy, including known platelet function disorders. Subjects on anticoagulation with low molecular weight heparin are allowed.\n4. Known hypersensitivity to any of the components of tazemetostat.\n5. Concurrent investigational agent or anticancer therapy. NOTE: Megestrol (Megace) if used as an appetite stimulant is allowed.\n6. Uncontrolled intercurrent illness including, but not limited to, ongoing or active infection, clinically significant bleeding diathesis or coagulopathy, including known platelet function disorders, symptomatic congestive heart failure, unstable angina pectoris, clinically significant cardiac arrhythmias, or psychiatric illness/social situations that would limit compliance with study requirements.\n7. Have a known active infection with hepatitis B virus (HBV, as measured by positive hepatitis B surface antigen, hepatitis C virus (HCV, as measured by positive hepatitis C antibody), OR human T-cell lymphotropic virus 1.\n8. Subjects taking medications that are known potent CYP3A4 inducers/inhibitors (including St. John's Wort).\n9. Is unwilling to exclude grapefruit juice, Seville oranges and grapefruit from the diet and all foods that contain those fruits from 24 hours prior to the first dose of study drug until the last dose of study drug.\n10. Any condition or medical problem in addition to the underlying malignancy and organ dysfunction that the Investigator feels would pose unacceptable risk.\n11. Has thrombocytopenia, neutropenia, or anemia of grade ≥3 (per CTCAE 5.0 criteria) or any prior history of myeloid malignancies, including myelodysplastic syndrome (MDS).\n12. Has abnormalities known to be associated with MDS and myeloproliferative neoplasms (MPN) observed in cytogenetic testing and DNA sequencing.\n13. Has a prior history of T-LBL/T-ALL.\n14. Ingestion of alcohol and smoking is not permitted any time during the study.\n15. History of drug abuse (including alcohol) within the last 6 months prior to screening.\n16. Severe hepatic encephalopathy (Grade \\>2) or degree of CNS impairment which the Investigator considers sufficiently serious to interfere with the informed consent, the conduct, the completion, or the results of this trial, or constitutes an unacceptable risk to the subject.\n17. History of liver transplantation.\n18. Advanced ascites or ascites that require drainage and albumin supplementation, as judged by the Investigator.\n19. Acute damage of the liver with Grade 4 AST/ALT values at screening or admission.",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+                "ADULT",
+                "OLDER_ADULT"
+            ]
+        },
+        "contactsLocationsModule": {
+            "overallOfficials": [
+                {
+                    "name": "Ipsen Medical Director",
+                    "affiliation": "Ipsen",
+                    "role": "STUDY_DIRECTOR"
+                }
+            ],
+            "locations": [
+                {
+                    "facility": "Florida Cancer Specialists & Research Institute",
+                    "city": "Lake Mary",
+                    "state": "Florida",
+                    "zip": "32746",
+                    "country": "United States",
+                    "geoPoint": {
+                        "lat": 28.75888,
+                        "lon": -81.31784
+                    }
+                },
+                {
+                    "facility": "Robert H. Lurie Comprehensive Cancer Center of Northwestern University",
+                    "city": "Chicago",
+                    "state": "Illinois",
+                    "zip": "60611",
+                    "country": "United States",
+                    "geoPoint": {
+                        "lat": 41.85003,
+                        "lon": -87.65005
+                    }
+                },
+                {
+                    "facility": "Hematology Oncology Consultants",
+                    "city": "Royal Oak",
+                    "state": "Michigan",
+                    "zip": "48073",
+                    "country": "United States",
+                    "geoPoint": {
+                        "lat": 42.48948,
+                        "lon": -83.14465
+                    }
+                },
+                {
+                    "facility": "Comprehensive Cancer Center of Nevada",
+                    "city": "Las Vegas",
+                    "state": "Nevada",
+                    "zip": "89014",
+                    "country": "United States",
+                    "geoPoint": {
+                        "lat": 36.17497,
+                        "lon": -115.13722
+                    }
+                },
+                {
+                    "facility": "Rutgers Cancer Institute",
+                    "city": "New Brunswick",
+                    "state": "New Jersey",
+                    "zip": "08901",
+                    "country": "United States",
+                    "geoPoint": {
+                        "lat": 40.48622,
+                        "lon": -74.45182
+                    }
+                },
+                {
+                    "facility": "Gabrail Cancer Center",
+                    "city": "Canton",
+                    "state": "Ohio",
+                    "zip": "44718",
+                    "country": "United States",
+                    "geoPoint": {
+                        "lat": 40.79895,
+                        "lon": -81.37845
+                    }
+                },
+                {
+                    "facility": "Mary Crowley Cancer Research",
+                    "city": "Dallas",
+                    "state": "Texas",
+                    "zip": "75230",
+                    "country": "United States",
+                    "geoPoint": {
+                        "lat": 32.78306,
+                        "lon": -96.80667
+                    }
+                },
+                {
+                    "facility": "Virginia Cancer Specialists",
+                    "city": "Fairfax",
+                    "state": "Virginia",
+                    "zip": "22031",
+                    "country": "United States",
+                    "geoPoint": {
+                        "lat": 38.84622,
+                        "lon": -77.30637
+                    }
+                },
+                {
+                    "facility": "Antwerp University Hospital",
+                    "city": "Edegem",
+                    "state": "Antwerp",
+                    "zip": "2650",
+                    "country": "Belgium",
+                    "geoPoint": {
+                        "lat": 51.15662,
+                        "lon": 4.44504
+                    }
+                },
+                {
+                    "facility": "Institut Bergonie",
+                    "city": "Bordeaux",
+                    "zip": "33076",
+                    "country": "France",
+                    "geoPoint": {
+                        "lat": 44.84124,
+                        "lon": -0.58046
+                    }
+                },
+                {
+                    "facility": "Centre Oscar Lambret",
+                    "city": "Lille",
+                    "zip": "59020",
+                    "country": "France",
+                    "geoPoint": {
+                        "lat": 50.63391,
+                        "lon": 3.05512
+                    }
+                },
+                {
+                    "facility": "Institut de Cancérologie Strasbourg Europe",
+                    "city": "Strasbourg",
+                    "country": "France",
+                    "geoPoint": {
+                        "lat": 48.58392,
+                        "lon": 7.74553
+                    }
+                },
+                {
+                    "facility": "MedPolonia",
+                    "city": "Poznan",
+                    "state": "Greater Poland Voivodeship",
+                    "zip": "60693",
+                    "country": "Poland",
+                    "geoPoint": {
+                        "lat": 52.40692,
+                        "lon": 16.92993
+                    }
+                },
+                {
+                    "facility": "Summit Clinical Research, s.r.o",
+                    "city": "Bratislava",
+                    "zip": "831 01",
+                    "country": "Slovakia",
+                    "geoPoint": {
+                        "lat": 48.14816,
+                        "lon": 17.10674
+                    }
+                }
+            ]
+        },
+        "ipdSharingStatementModule": {
+            "ipdSharing": "NO"
+        }
+    },
+    "derivedSection": {
+        "miscInfoModule": {
+            "versionHolder": "2026-07-21"
+        },
+        "interventionBrowseModule": {
+            "meshes": [
+                {
+                    "id": "C000593333",
+                    "term": "tazemetostat"
+                }
+            ]
+        }
+    },
+    "hasResults": false
+}

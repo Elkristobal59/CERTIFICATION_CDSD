@@ -1,0 +1,273 @@
+{
+    "protocolSection": {
+        "identificationModule": {
+            "nctId": "NCT06603935",
+            "orgStudyIdInfo": {
+                "id": "QHSLab 002-24"
+            },
+            "organization": {
+                "fullName": "QHSLab, Inc.",
+                "class": "INDUSTRY"
+            },
+            "briefTitle": "Harnessing Digital Medicine to Improve Allergic Rhinitis Management in Primary Care (DMAR)",
+            "officialTitle": "Harnessing Digital Medicine Tools for Improving Allergic Rhinitis Control in the Primary Care Setting: Optimizing Management and Outcomes Via Technology",
+            "acronym": "DMAR"
+        },
+        "statusModule": {
+            "statusVerifiedDate": "2026-02",
+            "overallStatus": "ENROLLING_BY_INVITATION",
+            "expandedAccessInfo": {
+                "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+                "date": "2024-11-18",
+                "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+                "date": "2025-12-31",
+                "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+                "date": "2026-12-31",
+                "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2024-09-13",
+            "studyFirstSubmitQcDate": "2024-09-16",
+            "studyFirstPostDateStruct": {
+                "date": "2024-09-19",
+                "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2026-02-05",
+            "lastUpdatePostDateStruct": {
+                "date": "2026-02-09",
+                "type": "ACTUAL"
+            }
+        },
+        "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+                "type": "SPONSOR"
+            },
+            "leadSponsor": {
+                "name": "QHSLab, Inc.",
+                "class": "INDUSTRY"
+            }
+        },
+        "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+        },
+        "descriptionModule": {
+            "briefSummary": "This study aims to evaluate the effectiveness of digital tools in managing allergic rhinitis (AR) in primary care settings. AR is a common condition that affects many people's quality of life. The study will test whether digital tools, such as the QHSLab platform, can help patients better control their symptoms, improve adherence to treatment, and enhance overall well-being. The trial will compare two groups: one using standard care and the other using both standard care and digital tools.\n\nParticipants will be monitored over 12 months, and the study will measure changes in symptom severity, treatment adherence, quality of life, and healthcare usage. The study will also gather feedback from patients and healthcare providers about their experience with the digital tools.\n\nThe digital tools used in this study are designed to help patients manage their AR more effectively by providing regular symptom assessments, medication reminders, and personalized feedback based on their health data.\n\nThis summary ensures the information is clear and straightforward for patients, families, and healthcare providers while maintaining compliance with IRB guidelines.",
+            "detailedDescription": "This clinical trial is designed to assess the impact of integrating digital medicine tools on the management of allergic rhinitis (AR) in primary care settings. The study will compare outcomes between two groups: one receiving standard care (STC) and another receiving standard care plus digital tools from the QHSLab platform. The digital tools include the Allergy Management Evaluation (AME) and Allergic Rhinitis Intervention Steps (ARIS), both of which offer continuous monitoring, personalized feedback, and treatment optimization based on patient-reported outcomes.\n\nThe study is a prospective, randomized, controlled trial that will enroll 226 adult participants with uncontrolled allergic rhinitis, measured by the SNOT-22 score. Participants will be followed for 12 months, with data collection points at baseline, 3, 6, and 12 months. The study aims to evaluate:\n\nChanges in symptom severity (SNOT-22 score). Medication adherence rates. Patient and provider satisfaction with the digital tools. Economic impact, including healthcare utilization and cost-effectiveness. Effects on mental health and quality of life. The study uses a mixed-methods approach, incorporating both quantitative measures and qualitative feedback through interviews with patients and healthcare providers to identify barriers and facilitators to adopting digital tools.\n\nThe QHSLab platform integrates seamlessly with current primary care workflows and includes tools for allergy management, offering insights based on patient interactions. The primary outcome is the reduction in symptom severity (SNOT-22 score), while secondary outcomes focus on patient adherence, healthcare use, satisfaction, and overall quality of life."
+        },
+        "conditionsModule": {
+            "conditions": [
+                "Allergic Rhinitis",
+                "Sinusitis"
+            ],
+            "keywords": [
+                "Allergic Rhinitis",
+                "Sinusitis",
+                "Digital Medicine",
+                "QHSLab",
+                "Allergy Management Evaluation",
+                "Allergic Rhinitis Intervention Steps",
+                "Digital Health Tools",
+                "Primary Care"
+            ]
+        },
+        "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+                "NA"
+            ],
+            "designInfo": {
+                "allocation": "RANDOMIZED",
+                "interventionModel": "PARALLEL",
+                "interventionModelDescription": "This study utilizes a parallel assignment model. Participants are randomized into two groups: one group receives standard care (STC) for allergic rhinitis, and the other group receives both standard care and the use of the digital medicine tools, Allergy Management Evaluation (AME) and Allergic Rhinitis Intervention Steps (ARIS), provided through the QHSLab platform. The intervention group will receive continuous digital monitoring, personalized feedback, and treatment adjustments based on patient-reported outcomes. Both groups will be followed for 12 months with assessments at baseline, 3, 6, and 12 months to evaluate symptom severity, adherence, and healthcare utilization.",
+                "primaryPurpose": "SUPPORTIVE_CARE",
+                "maskingInfo": {
+                    "masking": "NONE"
+                }
+            },
+            "enrollmentInfo": {
+                "count": 240,
+                "type": "ESTIMATED"
+            }
+        },
+        "armsInterventionsModule": {
+            "armGroups": [
+                {
+                    "label": "Standard Care (STC) group",
+                    "type": "NO_INTERVENTION",
+                    "description": "Participants in this arm will receive the current standard of care for managing allergic rhinitis, which includes clinical evaluations, diagnosis, and treatments based on the healthcare provider's assessment. Treatment options may include medications such as intranasal corticosteroids, antihistamines, or decongestants, as typically prescribed for allergic rhinitis management. The standard care group will not have access to the digital tools provided in the experimental arm, but their care will follow established guidelines and practices for allergic rhinitis management."
+                },
+                {
+                    "label": "Standard Care plus Digital Tools (QHSLab with AME and ARIS) group",
+                    "type": "EXPERIMENTAL",
+                    "description": "Participants in this arm will receive the standard care for managing allergic rhinitis, which includes regular clinical evaluations and treatments as determined by their healthcare provider. In addition, they will be provided access to the QHSLab digital platform, which includes the Allergy Management Evaluation (AME) and Allergic Rhinitis Intervention Steps (ARIS) tools. These tools will offer continuous symptom monitoring, medication reminders, and personalized feedback based on patient-reported data. The intervention aims to improve symptom management, medication adherence, and quality of life over the 12-month follow-up period.",
+                    "interventionNames": [
+                        "Other: QHSLab Digital Tools (AME and ARIS)"
+                    ]
+                }
+            ],
+            "interventions": [
+                {
+                    "type": "OTHER",
+                    "name": "QHSLab Digital Tools (AME and ARIS)",
+                    "description": "Participants will use the QHSLab digital platform, which includes two tools: the Allergy Management Evaluation (AME) and the Allergic Rhinitis Intervention Steps (ARIS). The AME provides a comprehensive digital assessment for identifying and monitoring allergic rhinitis symptoms. The ARIS offers personalized feedback based on patient-reported outcomes and continuously adjusts treatment recommendations through an algorithm. These tools support better symptom management, adherence to medication, and overall improvement in quality of life.",
+                    "armGroupLabels": [
+                        "Standard Care plus Digital Tools (QHSLab with AME and ARIS) group"
+                    ]
+                }
+            ]
+        },
+        "outcomesModule": {
+            "primaryOutcomes": [
+                {
+                    "measure": "Change in Allergic Rhinitis Symptom Severity (SNOT-22)",
+                    "description": "This outcome measures the change in allergic rhinitis symptom severity using the SNOT-22 scale. Scores range from 0 to 110, with higher scores indicating worse symptoms and lower quality of life.\n\nunit: SNOT-22 score",
+                    "timeFrame": "Baseline, 3 months, 6 months, 12 months"
+                }
+            ],
+            "secondaryOutcomes": [
+                {
+                    "measure": "Change in Depression Symptoms (PHQ-9)",
+                    "description": "This outcome measures the change in depressive symptoms using the Patient Health Questionnaire-9 (PHQ-9) scale. Scores range from 0 to 27, with higher scores indicating more severe depressive symptoms and lower scores indicating fewer depressive symptoms and improved mental health.\n\nUnit: PHQ-9 score",
+                    "timeFrame": "Baseline, 3 months, 6 months, 12 months"
+                },
+                {
+                    "measure": "Change in Anxiety Symptoms (GAD-7)",
+                    "description": "This outcome measures the change in anxiety symptoms using the Generalized Anxiety Disorder-7 (GAD-7) scale. Scores range from 0 to 21, with higher scores indicating more severe anxiety and lower scores indicating fewer anxiety symptoms and improved mental health.\n\nUnit: GAD-7 score",
+                    "timeFrame": "Baseline, 3 months, 6 months, 12 months"
+                },
+                {
+                    "measure": "Change in Quality of Life (Q-scale)",
+                    "description": "This outcome measures the change in quality of life using the Q-scale, which assesses various aspects of a person's well-being, including relaxation, happiness, confidence, strain, pain, and satisfaction with family, work, and life. Scores range from 0 to 40, with higher scores indicating better quality of life and lower scores indicating higher risk and poorer quality of life.\n\nThe scale is based on responses over the past 4 weeks, with items rated from \\&#34;None of the time\\&#34; to \\&#34;All of the time.\\&#34; Unit: Q-scale score",
+                    "timeFrame": "Baseline, 3 months, 6 months, 12 months"
+                },
+                {
+                    "measure": "Patient Satisfaction with Digital Tools (PDTS-10)",
+                    "description": "This 10-item scale measures patient satisfaction with the digital tools\\&#39; ease of use and perceived effectiveness. Patients rate their agreement with statements on a 5-point Likert scale from 1 (Strongly Disagree) to 5 (Strongly Agree). Higher scores indicate higher satisfaction with the digital tools.",
+                    "timeFrame": "3 months, 6 months, 12 months"
+                },
+                {
+                    "measure": "Provider Digital Tool Satisfaction Scale (PDTS-Provider)",
+                    "description": "This scale measures healthcare providers\\&#39; satisfaction with the ease of use and perceived effectiveness of the digital tools in improving patient care. Providers rate their agreement with statements on a 5-point Likert scale from 1 (Strongly Disagree) to 5 (Strongly Agree). Higher scores indicate higher satisfaction.\n\nPDTS-Provider score (Range: 10 to 50, higher scores indicate greater satisfaction)",
+                    "timeFrame": "Baseline, 3 months, 6 months, 12 months"
+                }
+            ]
+        },
+        "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Adults aged 18-65 years.\n* Clinically diagnosed with allergic rhinitis and/or sinusitis for at least 6 months.\n* SNOT-22 score of ≥20, indicating uncontrolled allergic rhinitis.\n* If Currently receiving treatment for allergic rhinitis and willing to continue treatment during the study.\n* Able and willing to provide informed consent electronically and comply with the study procedures.\n\nExclusion Criteria:\n\n* Individuals under 18 or over 65 years of age.\n* Pregnant or breastfeeding women.\n* Recent surgical treatment for nasal polyps (within the last 3 months).\n* Patients with cystic fibrosis, purulent nasal infections, or any other disease likely to interfere with the study parameters.\n* Individuals with severe or unstable concurrent diseases or psychological disorders that may compromise participation in the study.",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "maximumAge": "65 Years",
+            "stdAges": [
+                "ADULT",
+                "OLDER_ADULT"
+            ]
+        },
+        "contactsLocationsModule": {
+            "locations": [
+                {
+                    "facility": "QHSLab",
+                    "city": "West Palm Beach",
+                    "state": "Florida",
+                    "zip": "33407",
+                    "country": "United States",
+                    "geoPoint": {
+                        "lat": 26.71534,
+                        "lon": -80.05337
+                    }
+                }
+            ]
+        },
+        "referencesModule": {
+            "references": [
+                {
+                    "type": "BACKGROUND",
+                    "citation": "Rizvi, S., et al. (2022). Allergies in Primary Care: A Study of the Allergy Management Evaluation Tool. Consultant, 62, e1-e8."
+                }
+            ]
+        },
+        "ipdSharingStatementModule": {
+            "ipdSharing": "NO",
+            "description": "Individual patient data (IPD) will not be shared. The study will work with a compiled dataset that anonymizes and unifies all patient data, ensuring privacy and confidentiality"
+        }
+    },
+    "derivedSection": {
+        "miscInfoModule": {
+            "versionHolder": "2026-07-21"
+        },
+        "conditionBrowseModule": {
+            "meshes": [
+                {
+                    "id": "D065631",
+                    "term": "Rhinitis, Allergic"
+                },
+                {
+                    "id": "D012852",
+                    "term": "Sinusitis"
+                }
+            ],
+            "ancestors": [
+                {
+                    "id": "D012220",
+                    "term": "Rhinitis"
+                },
+                {
+                    "id": "D009668",
+                    "term": "Nose Diseases"
+                },
+                {
+                    "id": "D012140",
+                    "term": "Respiratory Tract Diseases"
+                },
+                {
+                    "id": "D012130",
+                    "term": "Respiratory Hypersensitivity"
+                },
+                {
+                    "id": "D010038",
+                    "term": "Otorhinolaryngologic Diseases"
+                },
+                {
+                    "id": "D006969",
+                    "term": "Hypersensitivity, Immediate"
+                },
+                {
+                    "id": "D006967",
+                    "term": "Hypersensitivity"
+                },
+                {
+                    "id": "D007154",
+                    "term": "Immune System Diseases"
+                },
+                {
+                    "id": "D012141",
+                    "term": "Respiratory Tract Infections"
+                },
+                {
+                    "id": "D007239",
+                    "term": "Infections"
+                },
+                {
+                    "id": "D010254",
+                    "term": "Paranasal Sinus Diseases"
+                }
+            ]
+        },
+        "interventionBrowseModule": {
+            "meshes": [
+                {
+                    "id": "C017501",
+                    "term": "methylamphotericin B"
+                }
+            ]
+        }
+    },
+    "hasResults": false
+}

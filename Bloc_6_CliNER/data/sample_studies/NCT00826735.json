@@ -1,0 +1,218 @@
+{
+    "protocolSection": {
+        "identificationModule": {
+            "nctId": "NCT00826735",
+            "orgStudyIdInfo": {
+                "id": "070035"
+            },
+            "organization": {
+                "fullName": "Vanderbilt University",
+                "class": "OTHER"
+            },
+            "briefTitle": "The Effect of Guided Imagery on the Third Stage of Labor",
+            "officialTitle": "The Effect of Guided Imagery on the Third Stage of Labor"
+        },
+        "statusModule": {
+            "statusVerifiedDate": "2009-01",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+                "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+                "date": "2007-01"
+            },
+            "primaryCompletionDateStruct": {
+                "date": "2007-12",
+                "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+                "date": "2007-12",
+                "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2009-01-20",
+            "studyFirstSubmitQcDate": "2009-01-21",
+            "studyFirstPostDateStruct": {
+                "date": "2009-01-22",
+                "type": "ESTIMATED"
+            },
+            "lastUpdateSubmitDate": "2009-01-21",
+            "lastUpdatePostDateStruct": {
+                "date": "2009-01-22",
+                "type": "ESTIMATED"
+            }
+        },
+        "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+                "oldNameTitle": "Mavis N. Schorn RN, CNM, PhD",
+                "oldOrganization": "Vanderbilt University School of Nursing"
+            },
+            "leadSponsor": {
+                "name": "Vanderbilt University",
+                "class": "OTHER"
+            },
+            "collaborators": [
+                {
+                    "name": "Sigma Theta Tau International, Iota chapter",
+                    "class": "UNKNOWN"
+                },
+                {
+                    "name": "Sigma Theta Tau International, Delta Psi chapter",
+                    "class": "UNKNOWN"
+                },
+                {
+                    "name": "American College of Nurse-Midwive - ACNM Foundation",
+                    "class": "INDUSTRY"
+                }
+            ]
+        },
+        "oversightModule": {
+            "oversightHasDmc": false
+        },
+        "descriptionModule": {
+            "briefSummary": "The purpose of this study was to evaluate the effect of guided imagery on the third stage of labor. Blood loss from hemorrhage during childbirth, most commonly due to uterine atony, is one of the leading causes of maternal mortality in the United States and the leading cause of maternal death worldwide. The hypothesis was that the use of physiologic guided imagery would reduce the amount of bleeding during the third stage of labor."
+        },
+        "conditionsModule": {
+            "conditions": [
+                "Third Stage of Labor",
+                "Bleeding",
+                "Guided Imagery",
+                "Childbirth"
+            ],
+            "keywords": [
+                "third stage of labor",
+                "bleeding",
+                "guided imagery",
+                "childbirth"
+            ]
+        },
+        "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+                "NA"
+            ],
+            "designInfo": {
+                "primaryPurpose": "PREVENTION"
+            }
+        },
+        "armsInterventionsModule": {
+            "armGroups": [
+                {
+                    "label": "Guided imagery",
+                    "type": "EXPERIMENTAL",
+                    "description": "The experimental group received a relaxation focused guided imagery intervention to use through the remainder of pregnancy plus a physiologic guided imagery intervention during the third stage of labor. These interventions were scripted and prerecorded on CDs.",
+                    "interventionNames": [
+                        "Behavioral: Guided imagery"
+                    ]
+                }
+            ],
+            "interventions": [
+                {
+                    "type": "BEHAVIORAL",
+                    "name": "Guided imagery",
+                    "description": "A relaxation focused guided imagery intervention was used through the remainder of pregnancy plus a physiologic guided imagery intervention was used during the third stage of labor.",
+                    "armGroupLabels": [
+                        "Guided imagery"
+                    ]
+                }
+            ]
+        },
+        "outcomesModule": {
+            "primaryOutcomes": [
+                {
+                    "measure": "Blood Loss"
+                }
+            ],
+            "secondaryOutcomes": [
+                {
+                    "measure": "Length of third stage of labor"
+                }
+            ]
+        },
+        "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* 18 years of age or older but less than 35 years\n* English as her primary language\n* fetus in a cephalic presentation\n* singleton pregnancy\n* 36 to 38 estimated gestational weeks\n* no contraindications to vaginal delivery\n* maternal weight less than 200 pounds prior to pregnancy\n\nExclusion Criteria:\n\n* more than four previous children\n* a history of postpartum hemorrhage\n* bleeding disorder\n* seizure disorder\n* polyhydramnios\n* diabetes (including gestational)\n* hypertension\n* cardiac disease\n* uterine fibroids\n* anemia (hematocrit less than 30)\n* intrauterine fetal demise or tobacco use",
+            "healthyVolunteers": true,
+            "sex": "FEMALE",
+            "minimumAge": "18 Years",
+            "maximumAge": "34 Years",
+            "stdAges": [
+                "ADULT"
+            ]
+        },
+        "contactsLocationsModule": {
+            "overallOfficials": [
+                {
+                    "name": "Mavis N Schorn, PhD",
+                    "affiliation": "Vanderbilt University School of Nursing",
+                    "role": "PRINCIPAL_INVESTIGATOR"
+                }
+            ],
+            "locations": [
+                {
+                    "facility": "Vanderbilt University Medical Center",
+                    "city": "Nashville",
+                    "state": "Tennessee",
+                    "zip": "37240",
+                    "country": "United States",
+                    "geoPoint": {
+                        "lat": 36.16589,
+                        "lon": -86.78444
+                    }
+                }
+            ]
+        }
+    },
+    "derivedSection": {
+        "miscInfoModule": {
+            "versionHolder": "2026-07-21"
+        },
+        "conditionBrowseModule": {
+            "meshes": [
+                {
+                    "id": "D006470",
+                    "term": "Hemorrhage"
+                }
+            ],
+            "ancestors": [
+                {
+                    "id": "D010335",
+                    "term": "Pathologic Processes"
+                },
+                {
+                    "id": "D013568",
+                    "term": "Pathological Conditions, Signs and Symptoms"
+                }
+            ]
+        },
+        "interventionBrowseModule": {
+            "meshes": [
+                {
+                    "id": "D019018",
+                    "term": "Imagery, Psychotherapy"
+                }
+            ],
+            "ancestors": [
+                {
+                    "id": "D026441",
+                    "term": "Mind-Body Therapies"
+                },
+                {
+                    "id": "D000529",
+                    "term": "Complementary Therapies"
+                },
+                {
+                    "id": "D013812",
+                    "term": "Therapeutics"
+                },
+                {
+                    "id": "D011613",
+                    "term": "Psychotherapy"
+                },
+                {
+                    "id": "D004191",
+                    "term": "Behavioral Disciplines and Activities"
+                }
+            ]
+        }
+    },
+    "hasResults": false
+}

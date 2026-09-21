@@ -1,0 +1,268 @@
+{
+    "protocolSection": {
+        "identificationModule": {
+            "nctId": "NCT07562035",
+            "orgStudyIdInfo": {
+                "id": "FMASU MD323/2023"
+            },
+            "organization": {
+                "fullName": "Ain Shams University",
+                "class": "OTHER"
+            },
+            "briefTitle": "Endoscopic Versus Conventional Lumbar Decompression for Lumbar Canal Stenosis",
+            "officialTitle": "Outcomes Evaluation of Interlaminar Endoscopic Uniportal Bilateral Lumbar Decompression Versus Open Laminectomy for Degenerative Lumbar Canal Stenosis",
+            "acronym": "ENDOLSS"
+        },
+        "statusModule": {
+            "statusVerifiedDate": "2026-04",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+                "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+                "date": "2023-06-11",
+                "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+                "date": "2026-02-26",
+                "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+                "date": "2026-02-26",
+                "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2026-04-21",
+            "studyFirstSubmitQcDate": "2026-04-25",
+            "studyFirstPostDateStruct": {
+                "date": "2026-05-01",
+                "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2026-04-25",
+            "lastUpdatePostDateStruct": {
+                "date": "2026-05-01",
+                "type": "ACTUAL"
+            }
+        },
+        "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+                "type": "PRINCIPAL_INVESTIGATOR",
+                "investigatorFullName": "Mohammad Yousof Mohammad",
+                "investigatorTitle": "Assistant Lecturer, Department of Neurosurgery",
+                "investigatorAffiliation": "Ain Shams University"
+            },
+            "leadSponsor": {
+                "name": "Ain Shams University",
+                "class": "OTHER"
+            },
+            "collaborators": [
+                {
+                    "name": "General Organization for Teaching Hospitals and Institutes",
+                    "class": "OTHER"
+                }
+            ]
+        },
+        "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false,
+            "isUsExport": false
+        },
+        "descriptionModule": {
+            "briefSummary": "This is a randomized controlled trial comparing interlaminar uniportal endoscopic bilateral lumbar decompression with conventional open laminectomy in patients with degenerative lumbar canal stenosis. The study aims to evaluate and compare clinical outcomes including pain relief, functional improvement, operative parameters, and recovery profile between both surgical techniques. Patients will be followed postoperatively for one day outcomes, one month, and six months to assess effectiveness and safety of each procedure.",
+            "detailedDescription": "This randomized controlled trial was designed to compare the clinical and surgical outcomes of interlaminar uniportal endoscopic bilateral lumbar decompression versus conventional open laminectomy in patients diagnosed with degenerative lumbar canal stenosis. Lumbar spinal stenosis is a common degenerative condition that results in neurogenic claudication, radicular pain, and functional disability due to compression of neural elements.\n\nThe study was conducted at Ain Shams University Hospitals and Damanhour Medical National Institute. Patients meeting inclusion criteria were diagnosed based on clinical evaluation and radiological confirmation using MRI. Eligible patients were randomized into two groups: one group underwent minimally invasive interlaminar uniportal endoscopic bilateral decompression, while the other group underwent conventional open laminectomy.\n\nThe primary objective of the study was to compare the effectiveness of both surgical techniques in terms of pain relief and functional improvement. Secondary objectives included comparison of operative time, intraoperative blood loss, postoperative hospital stay, complication rates, muscle injury markers, and time to return to normal activity.\n\nPatients were evaluated preoperatively and postoperatively using standardized clinical assessment tools. Postoperative follow-up was conducted at one day postoperative period, one month, and six months to assess both early and mid-term outcomes.\n\nThe hypothesis of the study is that minimally invasive endoscopic decompression provides equivalent or superior clinical outcomes compared to conventional open laminectomy, with the advantage of reduced tissue trauma, less postoperative pain, faster recovery, and shorter hospital stay.\n\nThis study aims to contribute to the growing evidence supporting minimally invasive spine surgery techniques and to provide high-quality comparative data to guide surgical decision-making in degenerative lumbar canal stenosis."
+        },
+        "conditionsModule": {
+            "conditions": [
+                "Lumbar Spinal Stenosis"
+            ],
+            "keywords": [
+                "Lumbar spinal stenosis-Endoscopic lumbar decompression-Open laminectomy-Interlaminar decompression-Neurogenic claudication-RCT"
+            ]
+        },
+        "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+                "NA"
+            ],
+            "designInfo": {
+                "allocation": "RANDOMIZED",
+                "interventionModel": "PARALLEL",
+                "interventionModelDescription": "Participants were randomized into two parallel groups comparing endoscopic versus open decompression.\"",
+                "primaryPurpose": "TREATMENT",
+                "maskingInfo": {
+                    "masking": "NONE"
+                }
+            },
+            "enrollmentInfo": {
+                "count": 36,
+                "type": "ACTUAL"
+            }
+        },
+        "armsInterventionsModule": {
+            "armGroups": [
+                {
+                    "label": "Endoscopic Decompression Group",
+                    "type": "EXPERIMENTAL",
+                    "description": "Patients undergo interlaminar uniportal endoscopic bilateral lumbar decompression for treatment of degenerative lumbar spinal stenosis.",
+                    "interventionNames": [
+                        "Procedure: Interlaminar Uniportal Endoscopic Lumbar Decompression"
+                    ]
+                },
+                {
+                    "label": "Open Laminectomy Group",
+                    "type": "ACTIVE_COMPARATOR",
+                    "description": "Patients undergo conventional open laminectomy for treatment of degenerative lumbar spinal stenosis",
+                    "interventionNames": [
+                        "Procedure: Open Lumbar Laminectomy"
+                    ]
+                }
+            ],
+            "interventions": [
+                {
+                    "type": "PROCEDURE",
+                    "name": "Interlaminar Uniportal Endoscopic Lumbar Decompression",
+                    "description": "Minimally invasive interlaminar uniportal endoscopic decompression of the lumbar spinal canal performed for treatment of degenerative lumbar spinal stenosis. The procedure aims to relieve neural compression while preserving posterior spinal structures and reducing tissue trauma compared to open surgery.",
+                    "armGroupLabels": [
+                        "Endoscopic Decompression Group"
+                    ],
+                    "otherNames": [
+                        "Endoscopic lumbar decompression",
+                        "Uniportal spine endoscopy"
+                    ]
+                },
+                {
+                    "type": "PROCEDURE",
+                    "name": "Open Lumbar Laminectomy",
+                    "description": "Standard open lumbar laminectomy performed for decompression of the spinal canal in patients with degenerative lumbar spinal stenosis. The procedure involves removal of posterior bony and ligamentous structures to relieve neural compression.",
+                    "armGroupLabels": [
+                        "Open Laminectomy Group"
+                    ],
+                    "otherNames": [
+                        "Conventional laminectomy",
+                        "Open decompression surgery"
+                    ]
+                }
+            ]
+        },
+        "outcomesModule": {
+            "primaryOutcomes": [
+                {
+                    "measure": "Functional Disability (Oswestry Disability Index - ODI)",
+                    "description": "The Oswestry Disability Index (ODI) will be used to evaluate functional disability related to lumbar spinal stenosis. The ODI is a validated questionnaire assessing limitations in activities of daily living, including pain intensity, personal care, walking, sitting, standing, and social function. Scores range from 0 to 100, with higher scores indicating greater disability. Outcomes will be compared between patients undergoing interlaminar endoscopic and conventional open lumbar decompression.",
+                    "timeFrame": "Preoperative, 1 month, and 6 months postoperative"
+                },
+                {
+                    "measure": "Postoperative Leg Pain (VAS-Leg Score)",
+                    "description": "Radicular leg pain will be assessed using the Visual Analogue Scale (VAS), a validated 10-point scale ranging from 0 (no pain) to 10 (worst imaginable pain). Patients will rate their leg pain intensity preoperatively and at follow-up intervals. This measure reflects the severity of nerve root compression symptoms and will be used to compare the effectiveness of interlaminar endoscopic versus conventional open lumbar decompression",
+                    "timeFrame": "Preoperative, 1 day, 1 month, and 6 months postoperative"
+                },
+                {
+                    "measure": "Postoperative Back Pain (VAS-Back Score)",
+                    "description": "Low back pain intensity will be assessed using the Visual Analogue Scale (VAS), a validated patient-reported outcome measure ranging from 0 (no pain) to 10 (worst imaginable pain). This scale evaluates the severity of axial back pain associated with degenerative lumbar spinal stenosis. Measurements will be obtained preoperatively and at follow-up intervals to compare pain relief between interlaminar endoscopic and conventional open lumbar decompression techniques.",
+                    "timeFrame": "Preoperative, 1 day, 1 month, and 6 months postoperative"
+                },
+                {
+                    "measure": "Claudication Distance",
+                    "description": "Claudication distance will be assessed as the maximum walking distance a patient can achieve before the onset of neurogenic claudication symptoms, such as leg pain, numbness, or weakness. This measure reflects functional limitation due to lumbar spinal stenosis and will be used to evaluate improvement after interlaminar endoscopic versus open lumbar decompression.",
+                    "timeFrame": "Preoperative, 1 month, and 6 months postoperative"
+                }
+            ],
+            "secondaryOutcomes": [
+                {
+                    "measure": "Operative Time",
+                    "description": "Duration of surgery measured in hours from skin incision to wound closure in patients undergoing endoscopic versus open lumbar decompression.",
+                    "timeFrame": "Intraoperative"
+                },
+                {
+                    "measure": "Length of Hospital Stay",
+                    "description": "Duration of hospitalization measured in days from surgery to discharge.",
+                    "timeFrame": "From surgery to hospital discharge (typically within 1-5 days postoperative)"
+                },
+                {
+                    "measure": "Postoperative Complications",
+                    "description": "Incidence of postoperative complications including infection, dural tear, neurological deficit, and reoperation.",
+                    "timeFrame": "Up to 6 months postoperative"
+                },
+                {
+                    "measure": "Time to Return to Work",
+                    "description": "Time taken for patients to resume normal daily activities or return to work after surgery.",
+                    "timeFrame": "Up to 6 months postoperative"
+                },
+                {
+                    "measure": "Creatine Phosphokinase (CPK) Level",
+                    "description": "Serum creatine phosphokinase (CPK) levels will be measured as a biomarker of muscle injury associated with surgical intervention. Levels will be compared between endoscopic and open lumbar decompression groups to assess the degree of muscle damage.",
+                    "timeFrame": "1 day postoperative"
+                }
+            ]
+        },
+        "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\nPatients diagnosed with degenerative lumbar spinal stenosis based on clinical and radiological findings.\n\nPatients presenting with neurogenic claudication and/or radicular leg pain. Patients indicated for surgical decompression after failure of conservative treatment.\n\nAge 18 years and above. Patients able to provide informed consent.\n\nExclusion Criteria:\n\nPatients with previous lumbar spine surgery at the same level. Patients with spinal instability requiring fusion. Presence of spinal infection, tumor, or traumatic pathology. Severe comorbid conditions contraindicating surgery. Patients with incomplete clinical or follow-up data.",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+                "ADULT",
+                "OLDER_ADULT"
+            ]
+        },
+        "contactsLocationsModule": {
+            "overallOfficials": [
+                {
+                    "name": "Mohammad Yousof Aboukila, MD",
+                    "affiliation": "Ain Shams University, Faculty of Medicine, Department of Neurosurgery",
+                    "role": "PRINCIPAL_INVESTIGATOR"
+                }
+            ],
+            "locations": [
+                {
+                    "facility": "Ain Shams University Hospitals",
+                    "city": "Cairo",
+                    "country": "Egypt",
+                    "geoPoint": {
+                        "lat": 30.06263,
+                        "lon": 31.24967
+                    }
+                }
+            ]
+        },
+        "referencesModule": {
+            "references": [
+                {
+                    "type": "RESULT",
+                    "citation": "Aboukila MY, et al. \"Outcomes Evaluation of Interlaminar Endoscopic Uniportal Bilateral Lumbar Decompression versus Open Laminectomy for Degenerative Lumbar Canal Stenosis.\" Ain Shams University, Department of Neurosurgery, 2026. (Unpublished clinical study / thesis)"
+                }
+            ]
+        },
+        "ipdSharingStatementModule": {
+            "ipdSharing": "NO"
+        }
+    },
+    "derivedSection": {
+        "miscInfoModule": {
+            "versionHolder": "2026-07-21"
+        },
+        "conditionBrowseModule": {
+            "meshes": [
+                {
+                    "id": "D013130",
+                    "term": "Spinal Stenosis"
+                }
+            ],
+            "ancestors": [
+                {
+                    "id": "D013122",
+                    "term": "Spinal Diseases"
+                },
+                {
+                    "id": "D001847",
+                    "term": "Bone Diseases"
+                },
+                {
+                    "id": "D009140",
+                    "term": "Musculoskeletal Diseases"
+                }
+            ]
+        }
+    },
+    "hasResults": false
+}

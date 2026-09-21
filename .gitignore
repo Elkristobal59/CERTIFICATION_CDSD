@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches & Checkpoints
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# Environments & Dependencies
+env/
+.venv/
+venv/
+node_modules/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Secrets (CRITICAL)
+.env
+*.pem
+*.key
+
+# Media files & Large zips (> 50 MB)
+*.mp4
+*.zip
+*.tar.gz
+*.iso

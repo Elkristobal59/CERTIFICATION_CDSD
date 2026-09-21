@@ -1,0 +1,213 @@
+{
+    "protocolSection": {
+        "identificationModule": {
+            "nctId": "NCT01849835",
+            "orgStudyIdInfo": {
+                "id": "tongji10us"
+            },
+            "secondaryIdInfos": [
+                {
+                    "id": "tongji10-us1"
+                }
+            ],
+            "organization": {
+                "fullName": "Shanghai 10th People's Hospital",
+                "class": "OTHER"
+            },
+            "briefTitle": "A Test of the Comparison Between Trans-rectal and Trans-perineal Biopsy of Prostate",
+            "acronym": "RCT"
+        },
+        "statusModule": {
+            "statusVerifiedDate": "2014-05",
+            "overallStatus": "UNKNOWN",
+            "lastKnownStatus": "RECRUITING",
+            "expandedAccessInfo": {
+                "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+                "date": "2013-01"
+            },
+            "primaryCompletionDateStruct": {
+                "date": "2014-12",
+                "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2013-04-29",
+            "studyFirstSubmitQcDate": "2013-05-08",
+            "studyFirstPostDateStruct": {
+                "date": "2013-05-09",
+                "type": "ESTIMATED"
+            },
+            "lastUpdateSubmitDate": "2014-05-04",
+            "lastUpdatePostDateStruct": {
+                "date": "2014-05-06",
+                "type": "ESTIMATED"
+            }
+        },
+        "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+                "type": "PRINCIPAL_INVESTIGATOR",
+                "investigatorFullName": "Le-hang Guo",
+                "investigatorTitle": "Principal Investigator",
+                "investigatorAffiliation": "Shanghai 10th People's Hospital"
+            },
+            "leadSponsor": {
+                "name": "Shanghai 10th People's Hospital",
+                "class": "OTHER"
+            }
+        },
+        "oversightModule": {
+            "oversightHasDmc": true
+        },
+        "descriptionModule": {
+            "briefSummary": "The purpose of this randomized controlled trial (RCT) is to compare the two ways (tras-rectal and trans-perineal) to perform prostate biopsy from the rate of Positive detection, complications, pain level, operation time and costs et al."
+        },
+        "conditionsModule": {
+            "conditions": [
+                "Complication"
+            ],
+            "keywords": [
+                "rate of positive detection"
+            ]
+        },
+        "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+                "NA"
+            ],
+            "designInfo": {
+                "allocation": "RANDOMIZED",
+                "interventionModel": "PARALLEL",
+                "primaryPurpose": "DIAGNOSTIC",
+                "maskingInfo": {
+                    "masking": "NONE"
+                }
+            },
+            "enrollmentInfo": {
+                "count": 120,
+                "type": "ESTIMATED"
+            }
+        },
+        "armsInterventionsModule": {
+            "armGroups": [
+                {
+                    "label": "trans-rectal",
+                    "type": "EXPERIMENTAL",
+                    "description": "trans-rectal to perform the prostate biopsy",
+                    "interventionNames": [
+                        "Procedure: trans-rectal to perform the prostate biopsy"
+                    ]
+                },
+                {
+                    "label": "trans-perineal",
+                    "type": "EXPERIMENTAL",
+                    "description": "trans-perineal to perform the prostate biopsy",
+                    "interventionNames": [
+                        "Procedure: trans-perineal to perform the prostate biopsy"
+                    ]
+                }
+            ],
+            "interventions": [
+                {
+                    "type": "PROCEDURE",
+                    "name": "trans-rectal to perform the prostate biopsy",
+                    "description": "the puncture points are at the rectal",
+                    "armGroupLabels": [
+                        "trans-rectal"
+                    ]
+                },
+                {
+                    "type": "PROCEDURE",
+                    "name": "trans-perineal to perform the prostate biopsy",
+                    "description": "the puncture points are at the perineal",
+                    "armGroupLabels": [
+                        "trans-perineal"
+                    ],
+                    "otherNames": [
+                        "the puncture points are at the perineal"
+                    ]
+                }
+            ]
+        },
+        "outcomesModule": {
+            "primaryOutcomes": [
+                {
+                    "measure": "the rate of positive detections",
+                    "timeFrame": "1year"
+                }
+            ],
+            "secondaryOutcomes": [
+                {
+                    "measure": "the incidence rate of each complication",
+                    "timeFrame": "1 year"
+                }
+            ],
+            "otherOutcomes": [
+                {
+                    "measure": "pain level assessed by visual analogue scale",
+                    "timeFrame": "1 year"
+                }
+            ]
+        },
+        "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* prostate-specific antigen \\> 4ng/ml\n* Palpation is positive\n\nExclusion Criteria:\n\n* older than 80y\n* prostate-specific antigen \\> 100 ng/ml",
+            "healthyVolunteers": false,
+            "sex": "MALE",
+            "maximumAge": "80 Years",
+            "stdAges": [
+                "CHILD",
+                "ADULT",
+                "OLDER_ADULT"
+            ]
+        },
+        "contactsLocationsModule": {
+            "centralContacts": [
+                {
+                    "name": "guo lehang, phd",
+                    "role": "CONTACT",
+                    "phone": "+8613764538305",
+                    "email": "gopp1314@hotmail.com"
+                }
+            ],
+            "locations": [
+                {
+                    "facility": "10Th Hospital of Tongji University",
+                    "status": "RECRUITING",
+                    "city": "Shanghai",
+                    "state": "Shanghai Municipality",
+                    "zip": "200072",
+                    "country": "China",
+                    "contacts": [
+                        {
+                            "name": "guo lehang, phd",
+                            "role": "CONTACT",
+                            "phone": "+8613764538305",
+                            "email": "gopp1314@hotmail.com"
+                        },
+                        {
+                            "name": "xu huixiong, phd",
+                            "role": "PRINCIPAL_INVESTIGATOR"
+                        }
+                    ],
+                    "geoPoint": {
+                        "lat": 31.22222,
+                        "lon": 121.45806
+                    }
+                }
+            ]
+        },
+        "referencesModule": {
+            "references": [
+                {
+                    "type": "BACKGROUND",
+                    "citation": "Evidence-based Guidelines for Best Practice in Health Care Transrectal Ultrasound Guided Biopsy of the Prostate"
+                }
+            ]
+        }
+    },
+    "derivedSection": {
+        "miscInfoModule": {
+            "versionHolder": "2026-07-21"
+        }
+    },
+    "hasResults": false
+}

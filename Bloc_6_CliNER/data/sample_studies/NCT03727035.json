@@ -1,0 +1,270 @@
+{
+    "protocolSection": {
+        "identificationModule": {
+            "nctId": "NCT03727035",
+            "orgStudyIdInfo": {
+                "id": "MADC/IRB-XV/2017/302"
+            },
+            "organization": {
+                "fullName": "Meenakshi Ammal Dental College and Hospital",
+                "class": "OTHER"
+            },
+            "briefTitle": "Quantification of CD163 Inflammatory Biomarker in Chronic Periodontitis and Diabetic Subjects",
+            "officialTitle": "Quantification of CD163 Inflammatory Biomarker in Subgingival Plaque Samples of Generalized Chronic Periodontitis With or Without Type II Diabetes Mellitus"
+        },
+        "statusModule": {
+            "statusVerifiedDate": "2019-10",
+            "overallStatus": "UNKNOWN",
+            "lastKnownStatus": "RECRUITING",
+            "expandedAccessInfo": {
+                "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+                "date": "2018-02-10",
+                "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+                "date": "2019-11-30",
+                "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+                "date": "2019-12-15",
+                "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2018-10-30",
+            "studyFirstSubmitQcDate": "2018-10-30",
+            "studyFirstPostDateStruct": {
+                "date": "2018-11-01",
+                "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2019-10-16",
+            "lastUpdatePostDateStruct": {
+                "date": "2019-10-18",
+                "type": "ACTUAL"
+            }
+        },
+        "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+                "type": "PRINCIPAL_INVESTIGATOR",
+                "investigatorFullName": "Dr.Jaideep Mahendra",
+                "investigatorTitle": "Professor and PhD guide",
+                "investigatorAffiliation": "Meenakshi Ammal Dental College and Hospital"
+            },
+            "leadSponsor": {
+                "name": "Meenakshi Ammal Dental College and Hospital",
+                "class": "OTHER"
+            }
+        },
+        "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+        },
+        "descriptionModule": {
+            "briefSummary": "The quantification of CD163 will be analysed in the subgingival plaque samples of generalized chronic periodontitis patients with and without diabetes mellitus. The demographic and the periodontal parameters were assessed and the correlated with the quantification of the CD163. The CD163 gene expression was analyzed with RT-PCR and the quantification of CD163 will be done using ELISA.",
+            "detailedDescription": "The quantification of CD163 will be analysed in the subgingival plaque samples of generalized chronic periodontitis patients with and without diabetes mellitus. A total of 80 subjects with generalized chronic periodontitis were selected and divided into two groups. Group I comprised of 40 subjects who were diagnosed with generalized chronic periodontitis without any systemic conditions. Group II comprised of 40 generalized chronic periodontitis patients with type II diabetes mellitus. Demographic variables such as age, weight, height, BMI and income and the clinical parameters such as plaque index, bleeding on probing, probing pocket depth and clinical attachment level were recorded. Subgingival plaque samples were collected from both the groups.The collected samples were subjected to further molecular analysis for the CD163 expression using RT-PCR and for the CD163 quantification using ELISA. The elevated levels of CD163 in the subgingival plaque samples of generalized chronic periodontitis subjects with diabetes is expected and the early identification of patients at risk for diabetes mellitus and periodontitis."
+        },
+        "conditionsModule": {
+            "conditions": [
+                "Periodontal Diseases"
+            ],
+            "keywords": [
+                "CD163, Chronic periodontitis"
+            ]
+        },
+        "designModule": {
+            "studyType": "OBSERVATIONAL",
+            "patientRegistry": false,
+            "designInfo": {
+                "observationalModel": "OTHER",
+                "timePerspective": "OTHER"
+            },
+            "enrollmentInfo": {
+                "count": 80,
+                "type": "ESTIMATED"
+            }
+        },
+        "armsInterventionsModule": {
+            "armGroups": [
+                {
+                    "label": "Group I",
+                    "description": "Group I :40 Generalized chronic periodontitis subjects without type II diabetes mellitus"
+                },
+                {
+                    "label": "Group II",
+                    "description": "Group II: 40 Generalized chronic periodontitis subjects diagnosed with type II diabetes mellitus"
+                }
+            ]
+        },
+        "outcomesModule": {
+            "primaryOutcomes": [
+                {
+                    "measure": "Expression of CD163 gene",
+                    "description": "Expression of CD163 gene using RT-PCR",
+                    "timeFrame": "12 months"
+                }
+            ],
+            "secondaryOutcomes": [
+                {
+                    "measure": "Quantify the levels of CD163",
+                    "description": "Quantify the levels of CD163 using ELISA",
+                    "timeFrame": "12 months"
+                }
+            ]
+        },
+        "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n1. Patients willing to participate in the study.\n2. Patients within the age group of 30-65 years (both male and female)\n3. Patients should have ≥ 10 natural teeth.\n4. Criteria for selection of generalized chronic periodontitis:\n\n   * Patients having 30% or more sites with clinical attachment loss(CAL) ≥ 5mm.\n5. Criteria for selection of type II diabetes mellitus:\n\n   * Patients having HbA1C \\<7\n\nExclusion Criteria:\n\n1. Patients with systemic conditions such as respiratory diseases, renal disease, liver disease, rheumatoid arthritis, allergy, advanced malignancies and HIV infection will be excluded from the present investigation.\n2. Patients on drugs such as corticosteroids, antibiotics, aspirin, within 3months of investigation will be excluded.\n3. Current smokers, individuals who quit smoking less than 6 months.\n4. Patients who had undergone periodontal therapy within the previous 6 months.\n5. Pregnant women (which may alter the oral flora).",
+            "sex": "ALL",
+            "minimumAge": "30 Years",
+            "maximumAge": "65 Years",
+            "stdAges": [
+                "ADULT",
+                "OLDER_ADULT"
+            ],
+            "studyPopulation": "All patients within the age group of 35-60 years. The subjects were from the South Indian population.",
+            "samplingMethod": "NON_PROBABILITY_SAMPLE"
+        },
+        "contactsLocationsModule": {
+            "centralContacts": [
+                {
+                    "name": "Jaideep Mahendra, MDS;PhD",
+                    "role": "CONTACT",
+                    "phone": "9444963973",
+                    "email": "jaideep_m_23@yahoo.co.in"
+                },
+                {
+                    "name": "Daliah Ruth, BDS",
+                    "role": "CONTACT",
+                    "phone": "9789772881",
+                    "email": "daliah02ruth@gmail.com"
+                }
+            ],
+            "overallOfficials": [
+                {
+                    "name": "Jaideep Mahendra, MDS,PhD",
+                    "affiliation": "Meenakshi Ammal Dental College",
+                    "role": "STUDY_DIRECTOR"
+                }
+            ],
+            "locations": [
+                {
+                    "facility": "Jaideep Mahendra",
+                    "status": "RECRUITING",
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "zip": "600095",
+                    "country": "India",
+                    "contacts": [
+                        {
+                            "name": "Jaideep Mahendra, MDS;PhD",
+                            "role": "CONTACT",
+                            "phone": "9444963973",
+                            "phoneExt": "9444963973",
+                            "email": "jaideep_m_23@yahoo.co.in"
+                        },
+                        {
+                            "name": "Daliah Ruth, BDS",
+                            "role": "CONTACT",
+                            "phone": "9789772881",
+                            "email": "daliah02ruth@gmail.com"
+                        },
+                        {
+                            "name": "Daliah Ruth, BDS",
+                            "role": "PRINCIPAL_INVESTIGATOR"
+                        }
+                    ],
+                    "geoPoint": {
+                        "lat": 13.08784,
+                        "lon": 80.27847
+                    }
+                }
+            ]
+        },
+        "referencesModule": {
+            "references": [
+                {
+                    "pmid": "28419494",
+                    "type": "BACKGROUND",
+                    "citation": "Detzen L, Chen SCY, Cheng B, Papapanou PN, Lalla E. Increased levels of soluble CD163 in periodontitis patients. J Clin Periodontol. 2017 Jun;44(6):585-590. doi: 10.1111/jcpe.12731. Epub 2017 May 16."
+                }
+            ]
+        },
+        "ipdSharingStatementModule": {
+            "ipdSharing": "NO"
+        }
+    },
+    "annotationSection": {
+        "annotationModule": {
+            "unpostedAnnotation": {
+                "unpostedResponsibleParty": "Dr.Jaideep Mahendra, Professor and PhD guide, Meenakshi Ammal Dental College and Hospital",
+                "unpostedEvents": [
+                    {
+                        "type": "RELEASE",
+                        "date": "2020-09-03"
+                    },
+                    {
+                        "type": "RESET",
+                        "date": "2020-09-25"
+                    }
+                ]
+            }
+        }
+    },
+    "derivedSection": {
+        "miscInfoModule": {
+            "versionHolder": "2026-07-21",
+            "submissionTracking": {
+                "estimatedResultsFirstSubmitDate": "2020-09-03",
+                "submissionInfos": [
+                    {
+                        "releaseDate": "2020-09-03",
+                        "resetDate": "2020-09-25"
+                    }
+                ]
+            }
+        },
+        "conditionBrowseModule": {
+            "meshes": [
+                {
+                    "id": "D010510",
+                    "term": "Periodontal Diseases"
+                },
+                {
+                    "id": "D055113",
+                    "term": "Chronic Periodontitis"
+                }
+            ],
+            "ancestors": [
+                {
+                    "id": "D009059",
+                    "term": "Mouth Diseases"
+                },
+                {
+                    "id": "D009057",
+                    "term": "Stomatognathic Diseases"
+                },
+                {
+                    "id": "D010518",
+                    "term": "Periodontitis"
+                },
+                {
+                    "id": "D002908",
+                    "term": "Chronic Disease"
+                },
+                {
+                    "id": "D020969",
+                    "term": "Disease Attributes"
+                },
+                {
+                    "id": "D010335",
+                    "term": "Pathologic Processes"
+                },
+                {
+                    "id": "D013568",
+                    "term": "Pathological Conditions, Signs and Symptoms"
+                }
+            ]
+        }
+    },
+    "hasResults": false
+}
