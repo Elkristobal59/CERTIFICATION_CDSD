@@ -8,5 +8,4 @@ Construire un moteur de recommandation basé sur le contenu pour suggérer des a
 
 ## 📂 Contenu du Dossier
 - `North_face_ecommerce.ipynb` : Notebook complet de vectorisation textuelle et recommandation de produits.
-- `North_face_presentation.pptx` : Support de présentation officiel (soutenance 5 min).
 - `sample_data.csv` : Catalogue des produits The North Face avec descriptions.
