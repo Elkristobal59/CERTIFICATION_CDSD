@@ -48,21 +48,52 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Chargement du modèle au démarrage
-MODEL_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "models", "model.joblib")
-if not os.path.exists(MODEL_PATH):
-    # Fallback si exécuté depuis la racine
-    MODEL_PATH = "models/model.joblib"
+# ---------------------------------------------------------------------------
+# CHARGEMENT DYNAMIQUE DU MODÈLE (MLOps Architecture)
+# Priorité 1 : MLflow Model Registry (Production / Staging)
+# Priorité 2 : AWS S3 Artifact Store
+# Priorité 3 : Cache local résilient (Zero-Downtime Fallback)
+# ---------------------------------------------------------------------------
+MODEL_URI = os.getenv("MLFLOW_MODEL_URI", "models:/GetAround_Pricing_Model/Production")
+MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI", None)
+LOCAL_FALLBACK_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "models", "model.joblib")
+if not os.path.exists(LOCAL_FALLBACK_PATH):
+    LOCAL_FALLBACK_PATH = "models/model.joblib"
 
 model = None
-try:
-    if os.path.exists(MODEL_PATH):
-        model = joblib.load(MODEL_PATH)
-        print(f"[API] Pipeline chargee avec succes depuis {MODEL_PATH}")
+model_source = "unloaded"
+
+def load_production_model():
+    """Charge dynamiquement le modèle de production depuis MLflow ou bascule sur le cache local."""
+    global model, model_source
+    
+    # 1. Tentative de chargement via MLflow Model Registry
+    if MLFLOW_TRACKING_URI or os.getenv("USE_MLFLOW_REGISTRY", "false").lower() == "true":
+        try:
+            import mlflow.pyfunc
+            if MLFLOW_TRACKING_URI:
+                mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
+            print(f"[MLOps] Connexion au Model Registry MLflow ({MODEL_URI})...")
+            model = mlflow.pyfunc.load_model(MODEL_URI)
+            model_source = f"MLflow Model Registry ({MODEL_URI})"
+            print(f"[MLOps SUCCESS] Modèle de production chargé depuis {model_source}")
+            return
+        except Exception as e_mlflow:
+            print(f"[MLOps WARNING] Impossible de joindre le Model Registry MLflow : {e_mlflow}")
+            print("[MLOps FALLBACK] Basculement vers le cache local de haute disponibilité...")
+
+    # 2. Fallback de haute disponibilité (Zero-Downtime Local Cache)
+    if os.path.exists(LOCAL_FALLBACK_PATH):
+        try:
+            model = joblib.load(LOCAL_FALLBACK_PATH)
+            model_source = f"Local High-Availability Cache ({LOCAL_FALLBACK_PATH})"
+            print(f"[API] Modèle chargé avec succès via {model_source}")
+        except Exception as e_joblib:
+            print(f"[API ERROR] Échec du chargement du cache local : {e_joblib}")
     else:
-        print(f"[API WARNING] Modele introuvable a l'emplacement : {MODEL_PATH}")
-except Exception as e:
-    print(f"[API ERROR] Erreur lors du chargement du modele : {e}")
+        print(f"[API CRITICAL] Aucun modèle disponible (ni MLflow, ni fichier local : {LOCAL_FALLBACK_PATH})")
+
+load_production_model()
 
 
 # --- SCHÉMAS PYDANTIC ---
@@ -166,12 +197,14 @@ class LegacyInput(BaseModel):
 
 @app.get("/", tags=["System"])
 def root():
-    """Vérification de l'état de l'API et liens d'accès."""
+    """Vérification de l'état de l'API, traçabilité MLOps et liens d'accès."""
     return {
         "service": "GetAround Pricing API",
         "status": "online",
         "version": "1.0.0",
         "model_loaded": model is not None,
+        "model_source": model_source,
+        "mlops_architecture": "MLflow Model Registry / S3 with High-Availability Local Fallback",
         "docs_url": "/docs",
         "redoc_url": "/redoc"
     }
