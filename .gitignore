@@ -33,3 +33,7 @@ Thumbs.db
 FICHE_REVISION_*
 *FICHE_REVISION*
 fiches_revision/
+
+# Temp Drive uploads
+.tmp.driveupload/
+*.tmp
