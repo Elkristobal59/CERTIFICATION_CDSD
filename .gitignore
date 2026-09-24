@@ -28,3 +28,8 @@ Thumbs.db
 *.zip
 *.tar.gz
 *.iso
+
+# Fiches de révision personnelles (non publiées sur GitHub)
+FICHE_REVISION_*
+*FICHE_REVISION*
+fiches_revision/
