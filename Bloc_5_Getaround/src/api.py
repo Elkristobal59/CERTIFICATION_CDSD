@@ -4,7 +4,7 @@ Projet : GetAround Pricing Optimization - Certification CDSD Bloc 5
 Auteur : Christopher Gilleron
 
 Endpoints :
-- GET / : Statut du service, version et liens de documentation
+- GET / : Statut du service, version et architecture MLOps
 - GET /info : Valeurs acceptées pour les variables catégorielles et métadonnées du modèle
 - POST /predict : Prédiction unitaire typée avec Pydantic et fourchette recommandée
 - POST /predict/batch : Prédiction par lot pour les gestionnaires de flotte
@@ -25,21 +25,22 @@ app = FastAPI(
     description="""
 API d'estimation dynamique des prix journaliers de location GetAround.
 
-Fonctionnalités :
-- Inférence temps réel via Pipeline Scikit-Learn sérialisée
+Fonctionnalités MLOps :
+- Inférence temps réel avec support du Model Registry MLflow
+- Architecture hybride avec cache local haute disponibilité (Zero-Downtime Fallback)
 - Validation stricte des données d'entrée avec Pydantic v2
 - Estimation du prix central et d'une fourchette recommandée (±10% basé sur la MAE)
-- Support des requêtes unitaires et par lot (batch)
+- Support des requêtes unitaires, par lot (batch) et format legacy
 - Documentation interactive Swagger UI & ReDoc
     """,
     version="1.0.0",
     contact={
         "name": "Christopher Gilleron",
-        "url": "https://github.com/Elkristobal59/getaround-deployment-project"
+        "url": "https://github.com/Elkristobal59/CERTIFICATION_CDSD"
     }
 )
 
-# Configuration CORS pour autoriser les requêtes depuis Streamlit ou des applications tierces
+# Configuration CORS pour autoriser les requêtes depuis Streamlit ou applications externes
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -51,14 +52,13 @@ app.add_middleware(
 # ---------------------------------------------------------------------------
 # CHARGEMENT DYNAMIQUE DU MODÈLE (MLOps Architecture)
 # Priorité 1 : MLflow Model Registry (Production / Staging)
-# Priorité 2 : AWS S3 Artifact Store
-# Priorité 3 : Cache local résilient (Zero-Downtime Fallback)
+# Priorité 2 : Cache local résilient (Zero-Downtime Fallback)
 # ---------------------------------------------------------------------------
 MODEL_URI = os.getenv("MLFLOW_MODEL_URI", "models:/GetAround_Pricing_Model/Production")
 MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI", None)
-LOCAL_FALLBACK_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "models", "model.joblib")
+LOCAL_FALLBACK_PATH = os.path.join(os.path.dirname(__file__), "model.joblib")
 if not os.path.exists(LOCAL_FALLBACK_PATH):
-    LOCAL_FALLBACK_PATH = "models/model.joblib"
+    LOCAL_FALLBACK_PATH = "model.joblib"
 
 model = None
 model_source = "unloaded"
@@ -204,7 +204,7 @@ def root():
         "version": "1.0.0",
         "model_loaded": model is not None,
         "model_source": model_source,
-        "mlops_architecture": "MLflow Model Registry / S3 with High-Availability Local Fallback",
+        "mlops_architecture": "MLflow Model Registry with High-Availability Local Fallback",
         "docs_url": "/docs",
         "redoc_url": "/redoc"
     }
@@ -263,21 +263,60 @@ def _predict_dataframe(df: pd.DataFrame) -> List[PricePrediction]:
         raise HTTPException(status_code=400, detail=f"Erreur lors de l'inférence : {str(e)}")
 
 
-@app.post("/predict", response_model=PricePrediction, tags=["Inference"])
-def predict_price(car: CarFeatures):
+from typing import List, Optional, Union, Any
+
+@app.post("/predict", tags=["Inference"])
+def predict_price(payload: Union[CarFeatures, LegacyInput]):
     """
-    Estime le prix de location journalier recommandé pour un véhicule donné.
-    Retourne le prix central ainsi qu'une fourchette haute et basse suggérée.
+    Estime le prix de location journalier recommandé.
+    Accepte à la fois le format structuré Pydantic (CarFeatures) et le format legacy ({"input": [[...]]}).
+    Retourne à la fois 'prediction' (liste) et les détails enrichis pour une interopérabilité totale.
     """
-    car_dict = car.model_dump()
-    # Conversion booléens en entiers
+    if isinstance(payload, LegacyInput) or hasattr(payload, 'input'):
+        columns = [
+            'model_key', 'mileage', 'engine_power', 'fuel', 'paint_color', 
+            'car_type', 'private_parking_available', 'has_gps', 
+            'has_air_conditioning', 'automatic_car', 'has_getaround_connect', 
+            'has_speed_regulator', 'winter_tires'
+        ]
+        df_input = pd.DataFrame(payload.input, columns=columns)
+        for col in columns[6:]:
+            df_input[col] = df_input[col].astype(int)
+        
+        preds = model.predict(df_input)
+        pred_list = [float(p) for p in preds]
+        first_p = pred_list[0] if len(pred_list) > 0 else 0.0
+        rounded = int(round(first_p))
+        
+        return {
+            "prediction": [round(p, 2) for p in pred_list],
+            "predicted_price_per_day": round(first_p, 2),
+            "rounded_price": rounded,
+            "currency": "EUR",
+            "recommended_range": {
+                "min_price": max(10, rounded - 11),
+                "max_price": rounded + 11
+            }
+        }
+    
+    # Format CarFeatures structuré
+    car_dict = payload.model_dump()
     for k, v in car_dict.items():
         if isinstance(v, bool):
             car_dict[k] = int(v)
             
     df_single = pd.DataFrame([car_dict])
     predictions = _predict_dataframe(df_single)
-    return predictions[0]
+    p_obj = predictions[0]
+    
+    # Réponse enrichie bivalente (compatible avec l'ancien dashboard qui attend data['prediction'][0])
+    return {
+        "prediction": [p_obj.predicted_price_per_day],
+        "predicted_price_per_day": p_obj.predicted_price_per_day,
+        "rounded_price": p_obj.rounded_price,
+        "currency": p_obj.currency,
+        "recommended_range": p_obj.recommended_range
+    }
 
 
 @app.post("/predict/batch", response_model=BatchPredictionResponse, tags=["Inference"])
