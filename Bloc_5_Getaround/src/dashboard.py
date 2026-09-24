@@ -76,13 +76,23 @@ st.markdown("""
 @st.cache_data
 def load_datasets():
     """Charge les datasets de retards et de tarification."""
-    delay_path = "data/get_around_delay_analysis.xlsx"
-    pricing_path = "data/get_around_pricing_project.csv"
+    delay_candidates = [
+        "get_around_delay_analysis.xlsx",
+        "data/get_around_delay_analysis.xlsx",
+        os.path.join(os.path.dirname(__file__), "get_around_delay_analysis.xlsx"),
+        os.path.join(os.path.dirname(__file__), "..", "get_around_delay_analysis.xlsx"),
+        os.path.join(os.path.dirname(__file__), "..", "data", "get_around_delay_analysis.xlsx")
+    ]
+    pricing_candidates = [
+        "get_around_pricing_project.csv",
+        "data/get_around_pricing_project.csv",
+        os.path.join(os.path.dirname(__file__), "get_around_pricing_project.csv"),
+        os.path.join(os.path.dirname(__file__), "..", "get_around_pricing_project.csv"),
+        os.path.join(os.path.dirname(__file__), "..", "data", "get_around_pricing_project.csv")
+    ]
     
-    if not os.path.exists(delay_path):
-        delay_path = os.path.join(os.path.dirname(__file__), "..", delay_path)
-    if not os.path.exists(pricing_path):
-        pricing_path = os.path.join(os.path.dirname(__file__), "..", pricing_path)
+    delay_path = next((p for p in delay_candidates if os.path.exists(p)), "get_around_delay_analysis.xlsx")
+    pricing_path = next((p for p in pricing_candidates if os.path.exists(p)), "get_around_pricing_project.csv")
 
     df_delay = pd.read_excel(delay_path, sheet_name="rentals_data")
     df_pricing = pd.read_csv(pricing_path)
@@ -95,10 +105,15 @@ def load_datasets():
 @st.cache_resource
 def load_ml_model():
     """Charge la pipeline de tarification entraînée."""
-    model_path = "models/model.joblib"
-    if not os.path.exists(model_path):
-        model_path = os.path.join(os.path.dirname(__file__), "..", model_path)
-    if os.path.exists(model_path):
+    model_candidates = [
+        "model.joblib",
+        "models/model.joblib",
+        os.path.join(os.path.dirname(__file__), "model.joblib"),
+        os.path.join(os.path.dirname(__file__), "..", "model.joblib"),
+        os.path.join(os.path.dirname(__file__), "..", "models", "model.joblib")
+    ]
+    model_path = next((p for p in model_candidates if os.path.exists(p)), None)
+    if model_path and os.path.exists(model_path):
         try:
             return joblib.load(model_path)
         except Exception:
@@ -112,22 +127,19 @@ pipeline_model = load_ml_model()
 
 # --- SIDEBAR NAVIGATION ---
 
-st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Getaround_logo.svg/320px-Getaround_logo.svg.png", width=180)
-st.sidebar.markdown("### **Centre Décisionnel & MLOps**")
-st.sidebar.caption("Certification CDSD — Bloc 5 Industrialisation")
+st.sidebar.title("🚗 GetAround")
+st.sidebar.caption("Plateforme d'Aide à la Décision")
 
 page = st.sidebar.radio(
     "Navigation",
     [
         "📊 1. Analyse Retards & Seuil de Sécurité",
-        "💶 2. Simulateur de Prix Dynamique",
-        "🏗️ 3. Architecture & Documentation API"
+        "💶 2. Simulateur de Prix Dynamique"
     ]
 )
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("**Auteur :** Christopher Gilleron")
-st.sidebar.markdown("**API FastAPI :** [Documentation Swagger](/docs)")
+st.sidebar.markdown("🔗 **API FastAPI :** [Documentation Swagger](https://elkristobal59-getaround-pricing-api.hf.space/docs)")
 st.sidebar.caption("Getaround Fleet Management v1.0")
 
 
@@ -351,7 +363,7 @@ if page == "📊 1. Analyse Retards & Seuil de Sécurité":
 # PAGE 2 : SIMULATEUR DE PRIX DYNAMIQUE
 # ==============================================================================
 
-elif page == "💶 2. Simulateur de Prix Dynamique":
+else:
     st.title("💶 Simulateur d'Estimation du Prix de Location")
     st.markdown("""
     Aidez les propriétaires partenaires à positionner leur véhicule au prix optimal du marché.
@@ -411,7 +423,7 @@ elif page == "💶 2. Simulateur de Prix Dynamique":
         }
         
         # 1. Tentative d'appel en temps réel à l'API FastAPI
-        api_url = os.getenv("API_URL", "http://localhost:8000")
+        api_url = os.getenv("API_URL", "https://elkristobal59-getaround-pricing-api.hf.space")
         pred_price = None
         rounded_price = None
         min_price = None
@@ -461,69 +473,3 @@ elif page == "💶 2. Simulateur de Prix Dynamique":
         ℹ️ **Remarque méthodologique :** La puissance fiscale et le kilométrage constituent plus de 70 % de la valeur locative du véhicule.
         Les options (Connect, GPS, Régulateur) favorisent le taux de conversion et l'attractivité de l'annonce mais ne justifient qu'une surcote modérée (+2 à +5 €/jour).
         """)
-
-
-# ==============================================================================
-# PAGE 3 : ARCHITECTURE TECHNIQUE & DOCUMENTATION API
-# ==============================================================================
-
-else:
-    st.title("🏗️ Architecture MLOps & Documentation Technique")
-    st.markdown("""
-    L'infrastructure de déploiement suit les standards de production du référentiel RNCP Bloc 5.
-    """)
-
-    st.subheader("📐 Schéma d'Architecture & Flux de Données")
-    st.markdown("""
-    ```text
-    [ Données Brutes ]  -->  [ Pipeline Scikit-Learn ]  -->  [ MLflow Registry ]
-    (Excel + CSV)           (OneHot + Scaler + RF)          (Métriques & Modèle)
-                                     |
-                                     v
-                       +-----------------------------+
-                       |  Conteneurisation Docker    |
-                       |                             |
-                       |  +-----------------------+  |
-                       |  | API FastAPI (/predict)|  |
-                       |  | Port : 8000 (Swagger) |  |
-                       |  +-----------------------+  |
-                       |              ^              |
-                       |              | (REST / CORS)|
-                       |  +-----------------------+  |
-                       |  | Dashboard Streamlit   |  |
-                       |  | Port : 8501           |  |
-                       |  +-----------------------+  |
-                       +-----------------------------+
-    ```
-    """)
-
-    st.subheader("🔌 Points de Terminaison API (FastAPI)")
-    endpoints = pd.DataFrame([
-        {"Méthode": "GET", "Endpoint": "/", "Description": "Statut de santé du service et métadonnées"},
-        {"Méthode": "GET", "Endpoint": "/info", "Description": "Liste des marques, catégories acceptées et métriques"},
-        {"Méthode": "POST", "Endpoint": "/predict", "Description": "Inférence unitaire validée par schéma Pydantic v2"},
-        {"Méthode": "POST", "Endpoint": "/predict/batch", "Description": "Inférence par lot pour flottes de véhicules"},
-        {"Méthode": "GET", "Endpoint": "/docs", "Description": "Documentation OpenAPI interactive (Swagger UI)"}
-    ])
-    st.table(endpoints)
-
-    st.subheader("💻 Exemple de Requête cURL")
-    st.code("""
-curl -X POST "http://localhost:8000/predict" \\
-  -H "Content-Type: application/json" \\
-  -d '{
-    "model_key": "Peugeot",
-    "mileage": 75000,
-    "engine_power": 120,
-    "fuel": "diesel",
-    "paint_color": "black",
-    "car_type": "sedan",
-    "private_parking_available": true,
-    "has_gps": true,
-    "has_air_conditioning": true,
-    "automatic_car": false,
-    "has_getaround_connect": true,
-    "has_speed_regulator": true,
-    "winter_tires": false
-  }'
-    """, language="bash")
