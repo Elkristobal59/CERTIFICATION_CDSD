@@ -30,9 +30,9 @@ Les données collectées sont versionnées et stockées sur AWS S3 :
 ### 2. Aperçu de la Table Data Warehouse (`kayak_hotels_data`)
 Les données transformées sont injectées dans la table SQL `kayak_hotels_data` pour être requêtables par les équipes BI et les applications clientes :
 
-![Table PostgreSQL kayak_hotels_data](./data_table_postgresql.png)
+![Extrait du Dataset Hôtelier & Météo](./data_table_postgresql.png)
 
-*Exemple d'extraction SQL montrant la structure relationnelle : identifiant ville, météo agrégée, nom de l'établissement, note Booking, tarif moyen et géolocalisation.*
+*Extrait du jeu de données unifié (`booking_hotels.csv`) issu du pipeline de scraping et d'enrichissement météo avant ingestion dans la table PostgreSQL `kayak_hotels_data` (identifiant ville, température moyenne, coordonnées GPS, tarif et note Booking).*
 
 ---
 
