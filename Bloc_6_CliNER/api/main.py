@@ -1,19 +1,11 @@
 """
-Script : main.py (Le Cœur du Réacteur - Backend API)
-----------------------------------------------------
-Rôle : Exposer les fonctionnalités d'IA (RAG, Extraction) via des points d'accès HTTP (FastAPI) 
-pour que le front-end (Streamlit) puisse les interroger.
-
-🎓 Explication pour le jury (L'Architecture Hybride) :
-Ce script est la définition même du MLOps. Il combine :
-1. FastAPI : Un serveur web ultra-rapide asynchrone.
-2. Transformers / vLLM : Pour charger les modèles d'IA en mémoire vidéo (VRAM).
-3. LangChain : Pour découper intelligemment les textes (Chunking).
-4. pgvector (Supabase) : La base de données vectorielle pour la recherche sémantique.
-5. MLflow : Pour monitorer en direct (tracking) les prompts, les réponses et la latence.
-
-Point fort : Nous utilisons `vLLM` si un GPU puissant est détecté. C'est un moteur d'inférence 
-qui gère la VRAM avec la technique "PagedAttention", rendant la génération de texte 2 à 5 fois plus rapide !
+Backend API FastAPI pour le service d'extraction d'entités médicales (NER) et RAG clinique.
+Fonctionnalités :
+- Ingestion et découpage de documents protocolaires (LangChain text splitter).
+- Vectorisation sémantique biomédicale (BioBERT v1.1) et persistance pgvector (Supabase).
+- Inférence LLM accélérée (vLLM / Transformers) avec adaptateur LoRA fine-tuné sur CHIA.
+- Cache de résultats d'extraction pour optimisation FinOps et temps de réponse.
+- Télémétrie et traçabilité des requêtes via MLflow.
 """
 
 import os

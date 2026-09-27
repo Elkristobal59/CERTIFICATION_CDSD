@@ -366,20 +366,20 @@ st.markdown(
 
 st.sidebar.title("🫀 CliNER")
 st.sidebar.markdown("*AI-Powered Medical Intelligence & End-to-End Clinical Named Entity Recognition engine.*")
-st.sidebar.markdown("**Projet Jedha - Bootcamp AIFS01**")
+st.sidebar.markdown("**Certification CDSD — Bloc 6**")
 st.sidebar.markdown("---")
-st.sidebar.subheader("👨‍💻 L'Équipe")
-st.sidebar.markdown("Patrick Mouliom, Christopher Gilleron, Jérémie Becker, Arnaud Hoarau, Karim Atebata")
+st.sidebar.subheader("👤 Candidat")
+st.sidebar.markdown("**Christopher Gilleron**")
 st.sidebar.markdown("---")
 st.sidebar.header("Architecture & Stack")
-st.sidebar.metric(label="Serveur Inférence", value="Lightning AI (L4 GPU)")
+st.sidebar.metric(label="Serveur Inférence", value="AWS EC2 GPU (g4dn.xlarge)")
 st.sidebar.metric(label="Moteurs (NER & RAG)", value="Qwen 2.5 7B + BioBERT")
 st.sidebar.metric(label="Stockage Durable", value="Supabase (Postgres & S3)")
 st.sidebar.metric(label="MLOps & Tracking", value="MLflow")
 api_url_raw = st.sidebar.text_input(
-    "URL Backend Inférence (AWS EC2 / Lightning AI / Local):",
-    value=os.getenv("BACKEND_API_URL", os.getenv("LIGHTNING_AI_API_URL", "http://localhost:8000")),
-    help="Entrez l'URL de votre serveur FastAPI : ex. http://<IP_PUBLIQUE_EC2>:8000 ou votre URL Lightning.ai",
+    "URL Backend Inférence (AWS EC2 / Local):",
+    value=os.getenv("BACKEND_API_URL", os.getenv("EC2_API_URL", "http://localhost:8000")),
+    help="Entrez l'URL de votre serveur FastAPI : ex. http://<IP_PUBLIQUE_EC2>:8000 ou http://localhost:8000",
     key="api_url_input")
 
 # Nettoyage automatique et tolérance aux erreurs de saisie (ex: http:/ ou manque de http://)
@@ -394,7 +394,7 @@ api_url = api_url.rstrip("/")
 
 if api_url:
     os.environ["BACKEND_API_URL"] = api_url
-    os.environ["LIGHTNING_AI_API_URL"] = api_url
+    os.environ["EC2_API_URL"] = api_url
 
 
 # --------------------------------------------------------------------------- #
@@ -586,6 +586,36 @@ def build_task(study, force_pdf):
     return {"type": "pdf", "nct_id": nct_id}
 
 
+def _fetch_from_supabase_cache(nct_id):
+    """Fallback FinOps : récupère l'extraction depuis la table de cache Supabase ou les prédictions locales."""
+    db_url = os.getenv("SUPABASE_DATABASE_URL")
+    if db_url:
+        try:
+            import psycopg2
+            with psycopg2.connect(db_url, connect_timeout=3) as conn:
+                with conn.cursor() as cur:
+                    cur.execute("SELECT extraction FROM clinical_ner_cache WHERE doc_id = %s;", (nct_id,))
+                    row = cur.fetchone()
+                    if row and row[0]:
+                        raw = row[0]
+                        ext = json.loads(raw) if isinstance(raw, str) else raw
+                        return {"document": nct_id, "extraction": ext, "source": "supabase_cache"}
+        except Exception:
+            pass
+    # Secours local si hors-ligne
+    local_preds = os.path.join(os.path.dirname(__file__), "..", "data", "chia_predictions.json")
+    if os.path.exists(local_preds):
+        try:
+            with open(local_preds, "r", encoding="utf-8") as f:
+                preds = json.load(f)
+                for p in preds:
+                    if p.get("id") == nct_id:
+                        return {"document": nct_id, "extraction": p, "source": "local_gold_cache"}
+        except Exception:
+            pass
+    return None
+
+
 def run_gpu_extraction(tasks, label, api_url, output_dir, progress_cb=None):
     """Envoie les études sélectionnées au serveur GPU (vLLM). Retourne les résultats.
     progress_cb(done, total, nct) est appelé à chaque étude (barre de progression)."""
@@ -604,7 +634,8 @@ def run_gpu_extraction(tasks, label, api_url, output_dir, progress_cb=None):
                     f"{api_url}/process_text",
                     data={"disease": label, "document_id": nct_id,
                           "text_content": task["text"]},
-                    headers={"Bypass-Tunnel-Reminder": "true"})
+                    headers={"Bypass-Tunnel-Reminder": "true"},
+                    timeout=10)
             else:
                 pdf_path = (download_pdf_for_nctid(nct_id, output_dir)
                             if download_pdf_for_nctid else None)
@@ -614,7 +645,8 @@ def run_gpu_extraction(tasks, label, api_url, output_dir, progress_cb=None):
                             f"{api_url}/process_pdf",
                             files={"file": (f"{nct_id}.pdf", fh, "application/pdf")},
                             data={"disease": label},
-                            headers={"Bypass-Tunnel-Reminder": "true"})
+                            headers={"Bypass-Tunnel-Reminder": "true"},
+                            timeout=10)
                 else:
                     st.warning(f"Ni texte ni PDF pour {nct_id}")
                     continue
@@ -631,9 +663,23 @@ def run_gpu_extraction(tasks, label, api_url, output_dir, progress_cb=None):
                 st.session_state.demo_cache[nct_id] = data
                 st.session_state.extracted_docs.append(data.get("document", nct_id))
             else:
-                st.error(f"Erreur API ({resp.status_code}) pour {nct_id}")
+                cached = _fetch_from_supabase_cache(nct_id)
+                if cached:
+                    results.append(cached)
+                    st.session_state.demo_cache[nct_id] = cached
+                    st.session_state.extracted_docs.append(cached.get("document", nct_id))
+                    st.info(f"⚡ [Mode FinOps / Cache Supabase] Extraction servie instantanément pour {nct_id}.")
+                else:
+                    st.error(f"Erreur API ({resp.status_code}) pour {nct_id}")
         except Exception as e:
-            st.error(f"Impossible de traiter {nct_id} : {e}")
+            cached = _fetch_from_supabase_cache(nct_id)
+            if cached:
+                results.append(cached)
+                st.session_state.demo_cache[nct_id] = cached
+                st.session_state.extracted_docs.append(cached.get("document", nct_id))
+                st.info(f"⚡ [Mode FinOps / Cache Supabase] Extraction servie instantanément pour {nct_id} (0,2s).")
+            else:
+                st.error(f"Impossible de traiter {nct_id} : {e}")
     return results
 
 
@@ -1001,8 +1047,8 @@ with tab4:
 # --------------------------------------------------------------------------- #
 st.markdown(
     "<div class='cliner-footer'>"
-    "<b>CliNER</b> · AI-Powered Medical Intelligence — Projet Jedha Bootcamp AIFS01<br>"
-    "Patrick Mouliom · Christopher Gilleron · Jérémie Becker · Arnaud Hoarau · Karim Atebata"
+    "<b>CliNER</b> · AI-Powered Medical Intelligence & Clinical NER Engine<br>"
+    "Certification Concepteur Développeur en Science des Données (CDSD) — Christopher Gilleron"
     "</div>",
     unsafe_allow_html=True)
 

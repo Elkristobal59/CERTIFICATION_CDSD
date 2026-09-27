@@ -3,32 +3,28 @@ from playwright.sync_api import sync_playwright
 import time
 
 """
-Script : live_scraper.py (Le Moteur de Recherche Web)
------------------------------------------------------
-Rôle : Interroger l'API officielle ClinicalTrials.gov et télécharger les PDF originaux 
-des essais cliniques (soit par mot-clé de maladie, soit par ID exact).
-
-🎓 Explication pour le jury :
-Nous avons implémenté deux méthodes de téléchargement :
-1. Une méthode 'Scraping' (Playwright) qui navigue comme un humain pour récupérer des listes de PDFs.
-2. Une méthode 'CDN' directe (download_pdf_for_nctid) qui reconstitue l'URL de stockage AWS S3 
-   de ClinicalTrials pour télécharger le PDF à la vitesse de la lumière sans ouvrir de navigateur !
+Module de collecte et téléchargement des protocoles d'essais cliniques (ClinicalTrials.gov).
+Fournit deux stratégies d'acquisition :
+1. Extraction automatisée via navigateur headless (Playwright) pour les recherches exploratoires.
+2. Téléchargement direct par requête HTTP sur le CDN ClinicalTrials pour les identifiants NCT connus.
 """
 
 def run_scraper(condition: str, max_results: int = 5) -> str:
     """
-    Scrape en direct les PDFs de ClinicalTrials.gov pour une condition donnée (ex: 'Diabetes').
-    Retourne le chemin du dossier contenant les PDFs téléchargés.
+    Télécharge les protocoles PDF associés à une condition médicale donnée.
+    
+    Args:
+        condition: Pathologie ou terme de recherche clinique (ex: 'Diabetes').
+        max_results: Nombre maximal d'essais à traiter.
+        
+    Returns:
+        Chemin du répertoire local contenant les fichiers téléchargés.
     """
     output_dir = os.path.abspath(f"data/live_pdfs_{condition.replace(' ', '_')}")
     if not os.path.exists(output_dir):
         os.makedirs(output_dir, exist_ok=True)
 
-    # 🛠️ ASTUCE ARCHITECTURE STREAMLIT
-    # Streamlit fait tourner le code de l'interface dans plusieurs threads. 
-    # Or, Playwright (l'outil de scraping) déteste le multi-threading et crashe.
-    # Solution : Si on n'est pas dans le fil principal (main_thread), on s'auto-invoque 
-    # dans un sous-processus système (subprocess) totalement isolé !
+    # Isolation de l'exécution Playwright dans un sous-processus si invoqué hors du thread principal
     import threading
     if threading.current_thread() != threading.main_thread():
         print(f"Lancement de Playwright via subprocess pour '{condition}'...")
@@ -140,13 +136,14 @@ def run_scraper(condition: str, max_results: int = 5) -> str:
 
 def download_pdf_for_nctid(nct_id: str, output_dir: str) -> str:
     """
-    Télécharge le PDF pour un NCT ID spécifique via l'API v2 (sans Playwright, ultra-robuste).
-    Retourne le chemin du fichier téléchargé ou None si échec.
+    Télécharge le PDF pour un identifiant NCT spécifique via l'API v2 et le CDN ClinicalTrials.
     
-    🎓 Explication pour le jury : 
-    Plutôt que de lancer un navigateur lourd, on a fait du Reverse Engineering sur l'architecture 
-    de ClinicalTrials. On reconstitue l'URL de leur CDN cloud (Content Delivery Network) pour 
-    aspirer le PDF en HTTP direct. C'est 10x plus rapide !
+    Args:
+        nct_id: Identifiant de l'essai clinique (ex: 'NCT01849835').
+        output_dir: Répertoire de destination du fichier téléchargé.
+        
+    Returns:
+        Chemin local du fichier téléchargé ou None si aucun PDF n'est disponible.
     """
     import requests
     if not os.path.exists(output_dir):

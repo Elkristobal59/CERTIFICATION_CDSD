@@ -1,17 +1,7 @@
 """
-Script : inference_qwen.py (Phase 4 du Pipeline MLOps)
-------------------------------------------------------
-Rôle : Évaluer les performances du modèle fine-tuné sur le jeu de données de test (Test Set)
-et calculer les métriques de précision (Score F1, Précision, Rappel).
-
-🎓 Explication pour le jury (L'Inférence avec LoRA) :
-Lorsqu'on a fine-tuné le modèle (étape 3), on a seulement sauvegardé un "Adaptateur LoRA" (très léger).
-Pour utiliser le modèle, l'algorithme fait une opération de fusion (Merge) à la volée :
-1. Il charge le "Cerveau de base" (Le modèle Qwen original, 14 Go).
-2. Il charge la "Disquette de mise à jour" (Notre adaptateur LoRA CHIA, 40 Mo).
-3. Il combine les deux en VRAM.
-C'est hyper optimisé pour le Cloud : on peut avoir un seul gros cerveau de base, et charger plein de 
-petits adaptateurs différents selon les besoins de l'hôpital !
+Module d'inférence et d'évaluation NER pour Qwen-2.5-7B fine-tuné avec adaptateur LoRA (PEFT).
+Charge le modèle de base avec quantification 4-bit (bitsandbytes) et applique les poids adaptateurs LoRA
+pour évaluer les métriques d'extraction sur le jeu de test CHIA.
 """
 
 import torch
