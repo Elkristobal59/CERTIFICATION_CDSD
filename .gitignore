@@ -41,6 +41,12 @@ GUIDE_SOUTENANCE_*
 create_livrables_zip.py
 *.pdf
 
+# Analyses markdown générées/personnelles (doublons des notebooks officiels .ipynb)
+*_analysis.md
+*_prediction.md
+*_detector.md
+*_speed_dating.md
+
 # Temp Drive uploads
 .tmp.driveupload/
 *.tmp
