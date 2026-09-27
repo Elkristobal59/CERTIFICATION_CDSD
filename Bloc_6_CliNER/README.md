@@ -38,7 +38,7 @@ Organisation complète des flux de données entre l'interface Streamlit, le stoc
 
 ## 📂 Contenu du Répertoire
 - `CliNER_presentation.pptx` : Support de présentation officiel (soutenance finale 10 min Demoday).
-- `AIDE_MEMOIRE_ORAL_SLIDE_PAR_SLIDE_CLINER.pdf` : Fiche aide-mémoire slide par slide (format 1 page A4).
+- `CliNER_project_overview.ipynb` : Notebook de synthèse technique et d'évaluation face au Gold Standard CHIA.
 - `app/` : Application Web Streamlit avec surlignage d'entités médicales en direct.
 - `api/` : API backend FastAPI exposant les endpoints d'inférence (NER & RAG).
 - `scripts/` : Scripts d'inférence LoRA (`inference_qwen.py`) et d'ingestion/scraping en direct (`live_scraper.py`).

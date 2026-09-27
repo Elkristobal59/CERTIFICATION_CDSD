@@ -31,10 +31,15 @@ Thumbs.db
 *.iso
 LIVRABLES_ZIP/
 
-# Fiches de révision personnelles (non publiées sur GitHub)
+# Fiches de révision et aide-mémoires personnels (non publiés sur GitHub)
 FICHE_REVISION_*
 *FICHE_REVISION*
 fiches_revision/
+AIDE_MEMOIRE_*
+*AIDE_MEMOIRE*
+GUIDE_SOUTENANCE_*
+create_livrables_zip.py
+*.pdf
 
 # Temp Drive uploads
 .tmp.driveupload/
