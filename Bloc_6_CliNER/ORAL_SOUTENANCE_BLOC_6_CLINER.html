@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Oral Soutenance — Bloc 6 : Projet Final CliNER (Prompteur 2 Pages)</title>
+<style>
+  :root {
+    --accent-color: #0e7490;
+    --accent-bg: #ecfeff;
+  }
+  @page {
+    size: A4 portrait;
+    margin: 5mm 6mm 4mm 6mm;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 6.8pt;
+    line-height: 1.18;
+    color: #0f172a;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .page {
+    height: 287mm;
+    max-height: 287mm;
+    overflow: hidden;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .page:last-child {
+    page-break-after: avoid;
+  }
+  .header {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 2px;
+    margin-bottom: 3.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header-title {
+    font-size: 9.8pt;
+    font-weight: 800;
+    color: #0a2540;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .header-title span.tag {
+    background: var(--accent-color);
+    color: white;
+    font-size: 6.2pt;
+    padding: 0.5px 5px;
+    border-radius: 2.5px;
+    font-weight: 700;
+  }
+  .header-subtitle {
+    font-size: 6.8pt;
+    font-weight: 600;
+    color: #475569;
+    margin-top: 1px;
+  }
+  .header-meta {
+    font-size: 6.4pt;
+    font-weight: bold;
+    color: var(--accent-color);
+    text-align: right;
+    line-height: 1.25;
+  }
+  .banner-tips {
+    background: #ecfeff;
+    border: 1px solid #a5f3fc;
+    border-left: 3px solid var(--accent-color);
+    border-radius: 3px;
+    padding: 2.5px 5.5px;
+    margin-bottom: 4px;
+    font-size: 6.3pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-tips strong { color: #155e75; }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    flex: 1;
+  }
+  .slide-card {
+    border: 1px solid #cbd5e1;
+    border-radius: 3.5px;
+    margin-bottom: 4px;
+    background: #ffffff;
+    break-inside: avoid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .slide-header {
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 2.5px 5.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .slide-title {
+    font-size: 7.2pt;
+    font-weight: 700;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .slide-title .num {
+    background: var(--accent-color);
+    color: #ffffff;
+    padding: 0.5px 4px;
+    border-radius: 2px;
+    font-size: 6.1pt;
+    font-weight: 800;
+  }
+  .slide-time {
+    font-size: 5.9pt;
+    font-weight: 700;
+    color: var(--accent-color);
+    background: var(--accent-bg);
+    border: 0.5px solid var(--accent-color);
+    padding: 0.5px 4px;
+    border-radius: 2px;
+  }
+  .slide-body {
+    padding: 3px 5px 2.5px 5px;
+  }
+  .speech-prompt {
+    background: #fcfcfd;
+    border-left: 2px solid var(--accent-color);
+    padding: 2.5px 4.5px;
+    font-style: italic;
+    color: #1e293b;
+    margin-bottom: 3px;
+    font-size: 6.55pt;
+    line-height: 1.17;
+  }
+  .speech-prompt strong {
+    font-style: normal;
+    color: #0f172a;
+  }
+  ul.key-points {
+    margin: 0 0 2.5px 0;
+    padding-left: 11px;
+  }
+  ul.key-points li {
+    margin-bottom: 1px;
+  }
+  .box-metric {
+    background: var(--accent-bg);
+    border: 0.5px solid var(--accent-color);
+    border-radius: 2px;
+    padding: 2px 4px;
+    font-size: 6pt;
+    color: #0f172a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box-metric strong {
+    color: var(--accent-color);
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 : SLIDES 1 A 4 -->
+<div class="page">
+  <div>
+    <div class="header">
+      <div>
+        <div class="header-title">
+          BLOC 6 : PROJET FINAL CLINIER <span class="tag">RNCP 35288</span>
+        </div>
+        <div class="header-subtitle">
+          Guide d'Oral Slide par Slide — Direction de Projet IA, Fine-Tuning LLM Souverain &amp; NLP Clinique (Page 1/2)
+        </div>
+      </div>
+      <div class="header-meta">
+        ÉPREUVE ORALE : 20 MIN (10m Pitch + 10m Q&amp;A)<br>
+        Candidat : Christopher Gilleron · 8 Slides
+      </div>
+    </div>
+
+    <div class="banner-tips">
+      <span>🎯 <strong>Objectif :</strong> Automatiser l'extraction des critères d'éligibilité clinique avec Qwen-2.5-7B LoRA et BioBERT RAG.</span>
+      <span>⏱️ <strong>Chrono :</strong> 10 min au total (~1m15 / slide) · Rigueur médicale, FinOps &amp; souveraineté</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+
+    <!-- SLIDE 1 -->
+    <div class="slide-card">
+      <div class="slide-header">
+        <div class="slide-title"><span class="num">S1</span> Contexte Médical &amp; Enjeu d'Accès aux Essais</div>
+        <div class="slide-time">00:00 - 01:15 (75s)</div>
+      </div>
+      <div class="slide-body">
+        <div class="speech-prompt">
+          « Bonjour à tous. Aujourd'hui, j'ai le plaisir de vous présenter <strong>CliNER</strong>, notre solution d'intelligence artificielle appliquée à la standardisation des protocoles cliniques et au recrutement de patients. En oncologie, le recrutement est un goulot d'étranglement critique : les médecins perdent des heures à lire des protocoles de 50 à 100 pages. ClinicalTrials.gov compte 500 000 études, mais l'information est enfouie dans des blocs de texte libre ou des PDF scannés. Mission de CliNER : un <strong>pipeline ETL augmenté par l'IA</strong> qui extrait chirurgicalement les critères d'éligibilité en données structurées. »
+        </div>
+        <ul class="key-points">
+          <li><strong>Problème Médical :</strong> 80 % des essais accusent des retards de recrutement de patients.</li>
+          <li><strong>Gisement Data :</strong> 500 000 protocoles ClinicalTrials.gov inexploitables à grande échelle.</li>
+          <li><strong>Proposition de valeur :</strong> Diviser par 5 le temps de qualification d'un patient pour un essai.</li>
+        </ul>
+        <div class="box-metric">
+          <span>Corpus mondial</span>
+          <strong>500 000 protocoles · Textes non structurés</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide-card">
+      <div class="slide-header">
+        <div class="slide-title"><span class="num">S2</span> Démonstration Applicative &amp; UX Praticien</div>
+        <div class="slide-time">01:15 - 02:30 (75s)</div>
+      </div>
+      <div class="slide-body">
+        <div class="speech-prompt">
+          « Notre solution se matérialise par une application web intuitive pour les oncologues. Depuis Streamlit, le praticien saisit une pathologie (ex. cancer du poumon). En moins d'une seconde, l'API officielle retourne les essais correspondants. Dès qu'il clique sur "Extraire", l'IA s'active : en <strong>2 à 4 secondes</strong>, le GPU génère un <strong>JSON médical structuré</strong> isolant pathologies ciblées, molécules prescrites, tranches d'âge et critères d'exclusion. Pour les études déjà analysées, notre <strong>cache vectoriel Supabase répond en 0,1 seconde</strong> sans GPU. Un chatbot RAG interactif permet de dialoguer directement avec le texte du protocole. »
+        </div>
+        <ul class="key-points">
+          <li><strong>Recherche API :</strong> Instantanée (&lt; 1s) · Filtres d'état de recrutement et localisation.</li>
+          <li><strong>Extraction IA :</strong> 2 à 4s sur GPU · JSON standardisé validé par Pydantic.</li>
+          <li><strong>Cache persistant :</strong> 0,1s pour les études déjà traitées · Chatbot interactif RAG.</li>
+        </ul>
+        <div class="box-metric">
+          <span>Temps d'extraction GPU : <strong>2 à 4 secondes</strong></span>
+          <span>Réponse Cache Supabase : <strong>0,1 seconde</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="slide-card">
+      <div class="slide-header">
+        <div class="slide-title"><span class="num">S3</span> Architecture Cloud Hybride &amp; FinOps</div>
+        <div class="slide-time">02:30 - 03:45 (75s)</div>
+      </div>
+      <div class="slide-body">
+        <div class="speech-prompt">
+          « Pour concilier haute performance et maîtrise des coûts, nous avons conçu une <strong>architecture FinOps à double détente</strong>. <strong>Branche A (Recherche &amp; UI) :</strong> 100 % serverless sur Render et API publique, coût 0 € en GPU. <strong>Branche B (Moteur IA) :</strong> allumée uniquement sur demande d'extraction profonde. Elle mobilise une instance <strong>AWS EC2 g4dn.xlarge (GPU NVIDIA T4 16 Go)</strong> propulsée par <strong>vLLM à 75 tokens/seconde</strong>, une base PostgreSQL Supabase avec pgvector, et un stockage S3 pour archiver les PDF. Le tracking est centralisé sur MLflow. »
+        </div>
+        <ul class="key-points">
+          <li><strong>Branche A (Serverless) :</strong> Render (Streamlit) + API ClinicalTrials.gov (0 € GPU).</li>
+          <li><strong>Branche B (Inférence GPU) :</strong> AWS EC2 g4dn.xlarge (NVIDIA T4) · Moteur vLLM (75 tok/s).</li>
+          <li><strong>FinOps :</strong> Auto-Kill EC2 par script Boto3 dès inactivité · Réduction de 85 % de la facture AWS.</li>
+        </ul>
+        <div class="box-metric">
+          <span>Inférence vLLM : <strong>75 tokens / sec</strong></span>
+          <span>GPU : <strong>NVIDIA T4 16 Go (AWS EC2)</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="slide-card">
+      <div class="slide-header">
+        <div class="slide-title"><span class="num">S4</span> Pipeline ETL Augmenté par l'IA</div>
+        <div class="slide-time">03:45 - 05:00 (75s)</div>
+      </div>
+      <div class="slide-body">
+        <div class="speech-prompt">
+          « Sous le capot, CliNER est un véritable pipeline ETL médical : <strong>1. Extraction robuste :</strong> Plan A direct si le JSON officiel fournit le texte (> 100 car) ; Plan B scraper PDF vers S3 avec zone de rejet pour isoler les fichiers corrompus sans bloquer le batch. <strong>2. Transformation hybride :</strong> BioBERT projette les paragraphes dans un espace biomédical 768D pour extraire le Top-5 des chunks pertinents et éliminer le bruit ; puis Qwen-2.5-7B Fine-Tuné génère le JSON final. <strong>3. Chargement :</strong> persistance dans Supabase et mise en cache vectoriel. »
+        </div>
+        <ul class="key-points">
+          <li><strong>Extract (Plan A/B) :</strong> Parsing JSON direct ou téléchargement PDF avec zone de quarantaine.</li>
+          <li><strong>Transform Hybride :</strong> BioBERT (filtrage sémantique 768D) + Qwen-7B LoRA (génération structurée).</li>
+          <li><strong>Load :</strong> Cache vectoriel PostgreSQL Supabase (pgvector) pour réutilisation immédiate.</li>
+        </ul>
+        <div class="box-metric">
+          <span>Embeddings BioBERT : <strong>768 dimensions</strong></span>
+          <span>Prétraitement : <strong>Top-5 Chunks filtrés</strong></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PAGE 2 : SLIDES 5 A 8 -->
+<div class="page">
+  <div>
+    <div class="header">
+      <div>
+        <div class="header-title">
+          BLOC 6 : PROJET FINAL CLINIER <span class="tag">RNCP 35288</span>
+        </div>
+        <div class="header-subtitle">
+          Guide d'Oral Slide par Slide — Benchmark Médical, LLMOps, CI/CD &amp; Déploiement HDS (Page 2/2)
+        </div>
+      </div>
+      <div class="header-meta">
+        ÉPREUVE ORALE : 20 MIN (10m Pitch + 10m Q&amp;A)<br>
+        Candidat : Christopher Gilleron · Slides 5 à 8
+      </div>
+    </div>
+
+    <div class="banner-tips">
+      <span>🎯 <strong>Excellence Métier :</strong> Souveraineté Qwen LoRA (0 € API propriétaire), priorité à la Précision clinique et gouvernance MLOps.</span>
+      <span>⏱️ <strong>Chrono :</strong> Slides 5 à 8 (05:00 à 10:00) · Bilan stratégique et passage à l'échelle industrielle</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+
+    <!-- SLIDE 5 -->
+    <div class="slide-card">
+      <div class="slide-header">
+        <div class="slide-title"><span class="num">S5</span> Fine-Tuning Souverain : Qwen-2.5-7B LoRA</div>
+        <div class="slide-time">05:00 - 06:15 (75s)</div>
+      </div>
+      <div class="slide-body">
+        <div class="speech-prompt">
+          « Pour garantir la <strong>souveraineté des données médicales (RGPD)</strong> et éliminer les coûts prohibitifs des API fermées, nous avons fine-tuné le modèle open-source <strong>Qwen-2.5-7B via QLoRA 4-bit</strong> sur le corpus de référence <strong>CHIA</strong> (1 000 études annotées par des experts). Rigueur scientifique absolue : découpage strict par identifiant d'essai (800 train / 200 test) éliminant tout risque de data leakage. Pour le Demo Day, nous avons annoté 5 études réelles inédites hors CHIA. Pendant le training, la perte a fondu de <strong>1,66 à 0,84</strong> et l'accuracy token a atteint <strong>85,7 %</strong>. »
+        </div>
+        <ul class="key-points">
+          <li><strong>Méthode QLoRA 4-bit :</strong> Adaptation de rang faible sur r=16, alpha=32 · 20M paramètres entraînés.</li>
+          <li><strong>Corpus CHIA :</strong> 1 000 essais cliniques segmentés strictement sans fuite d'information.</li>
+          <li><strong>Validation externe :</strong> 5 études réelles du Demo Day testées en aveugle complet.</li>
+        </ul>
+        <div class="box-metric">
+          <span>Perte d'entraînement : <strong>1,66 &rarr; 0,84</strong></span>
+          <span>Précision token : <strong>85,7 %</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 6 -->
+    <div class="slide-card">
+      <div class="slide-header">
+        <div class="slide-title"><span class="num">S6</span> Benchmark &amp; Priorité à la Précision</div>
+        <div class="slide-time">06:15 - 07:30 (75s)</div>
+      </div>
+      <div class="slide-body">
+        <div class="speech-prompt">
+          « Le verdict du benchmark : sur la tâche d'extraction d'entités nommées, notre fine-tuning fait bondir le <strong>F1-Score de 37 % (Gemini Flash) à 58,3 %</strong> pour Qwen LoRA (+21 points !). Mais en santé, la métrique reine n'est pas le F1 : <strong>c'est la Précision</strong>. Notre modèle atteint <strong>63 % de précision globale et 100 % sur l'extraction des molécules et médicaments</strong> guidée par BioBERT. Pourquoi ce choix ? En cancérologie, rater une mention est un désagrément, mais inventer un traitement qu'un patient ne doit pas recevoir serait une faute médicale grave. Fiabilité absolue. »
+        </div>
+        <ul class="key-points">
+          <li><strong>Gain F1-Score :</strong> +21 pts face aux modèles généralistes non spécialisés (Gemini Flash).</li>
+          <li><strong>Précision Médicaments :</strong> 100 % d'exactitude clinique grâce au double guidage BioBERT.</li>
+          <li><strong>Éthique médicale :</strong> Zéro hallucination thérapeutique tolérée pour la sécurité du patient.</li>
+        </ul>
+        <div class="box-metric">
+          <span>Précision Molécules : <strong>100 %</strong></span>
+          <span>Gain F1 vs Gemini Flash : <strong>+21 points (58,3%)</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 7 -->
+    <div class="slide-card">
+      <div class="slide-header">
+        <div class="slide-title"><span class="num">S7</span> Trajectoire MLOps &amp; LLMOps Industrielle</div>
+        <div class="slide-time">07:30 - 08:45 (75s)</div>
+      </div>
+      <div class="slide-body">
+        <div class="speech-prompt">
+          « Pour le passage à l'échelle industrielle, CliNER applique les standards Lead MLOps : <strong>1. CI/CD :</strong> pipelines GitHub Actions, tests unitaires PyTest, évaluation RAG automatisée via le framework Ragas, et conteneurs Docker multi-stage durcis et légers. <strong>2. Continuous Training (CT) :</strong> surveillance continue de la dérive des concepts (Data Drift) par <strong>distance de Wasserstein</strong> sur les embeddings BioBERT et réentraînement LoRA incrémental. <strong>3. FinOps &amp; Infra as Code :</strong> Terraform pour déployer le cluster et script Auto-Kill Boto3 sur AWS EC2. »
+        </div>
+        <ul class="key-points">
+          <li><strong>CI/CD :</strong> GitHub Actions + PyTest + Framework Ragas (évaluation continue de la fidélité RAG).</li>
+          <li><strong>Monitoring Drift :</strong> Distance de Wasserstein sur vecteurs BioBERT &rarr; Alerte réentraînement.</li>
+          <li><strong>Infrastructure as Code :</strong> Terraform + Docker Multi-stage + Auto-Kill AWS EC2.</li>
+        </ul>
+        <div class="box-metric">
+          <span>Détection Drift : <strong>Distance de Wasserstein</strong></span>
+          <span>Évaluation RAG : <strong>Ragas Framework</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 8 -->
+    <div class="slide-card">
+      <div class="slide-header">
+        <div class="slide-title"><span class="num">S8</span> Bilan d'Impact &amp; Déploiement HDS</div>
+        <div class="slide-time">08:45 - 10:00 (75s)</div>
+      </div>
+      <div class="slide-body">
+        <div class="speech-prompt">
+          « En conclusion, CliNER apporte un impact concret et mesurable : <strong>réduction de 80 % du temps de revue des protocoles</strong> pour les oncologues, fiabilisation du pré-recrutement et accélération de la recherche médicale. Grâce à son architecture open-source souveraine, la solution est immédiatement déployable sur des serveurs hospitaliers certifiés <strong>HDS (Hébergeur de Données de Santé)</strong>, garantissant une conformité totale au secret médical et au RGPD. CliNER prouve qu'un modèle spécialisé de 7 milliards de paramètres surpasse les géants généralistes tout en restant frugal et souverain. Merci pour votre attention. »
+        </div>
+        <ul class="key-points">
+          <li><strong>Impact Clinique :</strong> Revue de protocole accélérée de 80 % · Matching patient optimisé.</li>
+          <li><strong>Souveraineté Hospitalière :</strong> Compatible Hébergeur Données de Santé (HDS) &amp; RGPD strict.</li>
+          <li><strong>Frugalité :</strong> LLM 7B spécialisé &gt; API propriétaire fermée · Coûts prédictibles et maîtrisés.</li>
+        </ul>
+        <div class="box-metric">
+          <span>Bilan</span>
+          <strong>Gain de temps : 80 % · Déployable sur cluster hospitalier HDS</strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
