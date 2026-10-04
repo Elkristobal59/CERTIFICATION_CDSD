@@ -11,7 +11,7 @@ L'enjeu central est de vérifier scientifiquement :
 ---
 
 ## 🛠️ Stack Technique
-- **Traitement & Modélisation Statistique :** Python, Pandas, NumPy, SciPy (tests du Chi-2 et corrélations).
+- **Traitement Statistique & Exploration :** Python, Pandas, NumPy (statistiques descriptives, normalisation sur 100 points, agrégations bivariées et corrélations linéaires de Pearson).
 - **Data Visualisation :** Seaborn, Matplotlib, Plotly (analyses univariées, bivariées, distribution croisée).
 
 ---
