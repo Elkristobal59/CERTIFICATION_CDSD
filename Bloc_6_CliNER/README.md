@@ -17,6 +17,25 @@ Elle résout le problème critique du recrutement des patients en recherche biom
 
 ---
 
+## 🏛️ Gouvernance, Budget FinOps & Conformité RGPD
+
+### 1. Conformité RGPD & Données de Santé (HDS / PHI-Free)
+- **Traitement exclusif de données publiques :** Ingestion stricte des protocoles d'essais cliniques publics (ClinicalTrials.gov, PubMed, corpus CHIA) ne contenant **aucune donnée à caractère personnel nominative de patient (PHI-Free)**.
+- **Souveraineté Hospitalière & Herméticité :** Solution intégralement conteneurisée (Docker) conçue pour un déploiement *on-premise* dans l'enclave sécurisée du réseau hospitalier (DMZ CHU). **Zéro fuite de données ou de requêtes médicales vers des tiers ou des API LLM propriétaires**.
+- **Auditabilité :** Traçabilité complète des versions de modèles via MLflow Model Registry et journalisation chiffrée des inférences.
+
+### 2. Budget Prévisionnel & Stratégie FinOps
+- **Coût d'Entraînement / Fine-Tuning :** **15,20 $** au total (5 heures sur instance cloud GPU NVIDIA A10G spot via QLoRA 4-bit).
+- **Coût d'Inférence Opérationnelle :** **0,00 $ pour 40 % des requêtes récurrentes** grâce au cache persistant Supabase (temps de réponse < 0,2s sans solliciter le GPU).
+- **Coût d'Infrastructure Serveur :** Instance GPU dédiée à la demande (AWS EC2 g4dn.xlarge à 0,52 $/h ou runtime partagé vLLM), permettant un coût d'exploitation maîtrisé inférieur à **1 200 € / an** pour un service hospitalier.
+
+### 3. Planning Projet & Calendrier de Déploiement (Gantt 6 Mois)
+- **Mois 1 - Mois 2 (Cadrage & Ingestion) :** Définition des besoins oncologiques, constitution du Gold Standard CHIA (1 000 études annotées) et pipeline de scraping automatisé ClinicalTrials.gov.
+- **Mois 3 - Mois 4 (Modélisation & Fine-Tuning) :** Benchmark comparatif BioBERT vs Qwen 2.5 7B LoRA, calibration des hyperparamètres, et intégration du pipeline vLLM.
+- **Mois 5 - Mois 6 (Industrialisation & Pilote) :** Mise en place du monitoring MLflow, conteneurisation Docker Compose, tests d'acceptation utilisateurs (UAT) avec des praticiens et déploiement pilote.
+
+---
+
 ## 🖼️ Architecture & Interface de Démonstration
 
 ### 1. Vue d'Ensemble du Pipeline Clinique

@@ -41,5 +41,6 @@ Analyse comparative du profil textuel entre SMS légitimes et Spams (les spams p
 - `ATT_spam_detector_presentation.pptx` : Support de présentation officiel (soutenance orale 5 min).
 - `app.py` : Application web Streamlit pour tester la détection en direct sur de nouveaux messages.
 - `spam.csv` : Dataset SMS étiqueté (5 572 messages).
+- `att_spam_model.keras` : Modèle de Deep Learning Keras sérialisé (Bi-LSTM).
 - `tokenizer.pickle` : Tokenizer Keras sérialisé pour l'inférence.
 - `assets/` : Visuels des métriques et des courbes d'apprentissage.
