@@ -26,12 +26,13 @@ Thumbs.db
 
 # Media files & Large zips (> 50 MB)
 *.mp4
+*.mp3
 *.zip
 *.tar.gz
 *.iso
 LIVRABLES_ZIP/
 
-# Fiches de révision et aide-mémoires personnels (non publiés sur GitHub)
+# Fiches de révision, aide-mémoires et supports d'entraînement oral (non publiés sur GitHub)
 FICHE_REVISION_*
 *FICHE_REVISION*
 fiches_revision/
@@ -40,6 +41,13 @@ AIDE_MEMOIRE_*
 GUIDE_SOUTENANCE_*
 create_livrables_zip.py
 *.pdf
+
+# Répétitions orales, scripts audio et questions/réponses jury personnelles
+*ORAL_SOUTENANCE*
+*QA_JURY*
+QA_JURY_*
+*generate_oral*
+generate_all_orals_and_audios.py
 
 # Analyses markdown générées/personnelles (doublons des notebooks officiels .ipynb)
 *_analysis.md
