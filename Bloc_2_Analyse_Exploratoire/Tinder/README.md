@@ -21,27 +21,27 @@ L'enjeu central est de vérifier scientifiquement :
 ### 1. Préférences Déclarées par Genre (Q1)
 Sur 100 points à répartir avant les rencontres, les hommes accordent 50 % de plus au physique que les femmes (27,0 % vs 17,9 %). Les femmes privilégient l'intelligence (20,9 %) et la sincérité (18,3 %). Consensus parfait sur l'humour (~17,5 %) :
 
-![Préférences déclarées](./assets/tinder_s3_img9.png)
+![Préférences déclarées](./assets/tinder_nb_q1_preferences.png)
 
 ### 2. Le Choc : Discours Déclaré vs Comportement Réel (Q2)
 Mise en évidence du décalage cognitif : alors que l'intelligence et la sincérité sont survalorisées dans les questionnaires, la décision effective (`dec = 1`) est dominée par l'attirance physique ($r = +0,49$), le fun ($r = +0,41$) et les intérêts partagés ($r = +0,40$) :
 
-![Discours vs Réalité](./assets/tinder_s4_img11.png)
+![Discours vs Réalité](./assets/tinder_nb_q2_discours_vs_reel.png)
 
 ### 3. Homophilie : Origine Ethnique vs Passions Partagées (Q3)
 Partager la même origine ethnique n'apporte qu'un gain marginal non significatif (+1,0 pt de match, 16,1 % → 17,1 %). En revanche, partager de vraies passions communes augmente le taux de match de +4,8 pts (14,7 % → 19,5 %) :
 
-![Origine vs Passions](./assets/tinder_s5_img13.png)
+![Origine vs Passions](./assets/tinder_nb_q3_origine_interets.png)
 
 ### 4. Biais de Lucidité : Auto-évaluation vs Note Reçue (Q4)
 Biais d'optimisme généralisé : la quasi-totalité des participants se surestime par rapport aux notes attribuées par leurs partenaires (+1,02 pt sur 10 chez les hommes, +0,77 pt chez les femmes) :
 
-![Auto-évaluation vs Réalité](./assets/tinder_s6_img15.png)
+![Auto-évaluation vs Réalité](./assets/tinder_nb_q4_auto_evaluation.png)
 
 ### 5. Fatigue Décisionnelle : L'Ordre de Passage dans la Soirée (Q5)
 Le taux d'acceptation s'érode avec l'accumulation des rencontres, passant de 43,8 % en début de soirée (dates 1–3) à 40,0 % en fin de soirée (dates ≥ 15, soit une baisse de −3,8 pts) :
 
-![Effet d'ordre](./assets/tinder_s7_img17.png)
+![Effet d'ordre](./assets/tinder_nb_q5_ordre_passage.png)
 
 ---
 
