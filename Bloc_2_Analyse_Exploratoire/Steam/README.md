@@ -16,7 +16,8 @@ Dans le cadre d'une étude de marché pour orienter la conception, le pricing et
 > **Livrables fournis dans ce dépôt :**
 > 1. `Steam_databricks_executed.html` : **Rendu complet interactif exporté depuis le cluster Databricks**, contenant l'intégralité du code PySpark, des plans d'exécution Catalyst et des 26 visualisations graphiques générées via l'outil de dashboarding intégré `display()`.
 > 2. `Steam_databricks_executed.ipynb` : Notebook Jupyter source contenant les cellules PySpark exécutées et leurs sorties sérialisées.
-> 3. `Steam_presentation.pptx` : Présentation exécutive officielle calibrée à 8 slides (format soutenance 5 minutes) intégrant les graphiques haute résolution issus de Databricks.
+> 3. `Steam_video_games_analysis.ipynb` : Notebook PySpark structuré et commenté, prêt à être importé et réexécuté directement sur n'importe quel cluster Databricks ou Spark.
+> 4. `Steam_presentation.pptx` : Présentation exécutive officielle calibrée à 8 slides (format soutenance 5 minutes) intégrant les graphiques haute résolution issus de Databricks.
 
 ---
 
@@ -46,6 +47,7 @@ Dans le cadre d'une étude de marché pour orienter la conception, le pricing et
 
 ## 📂 Contenu du Répertoire
 - `Steam_databricks_executed.html` : **Rapport exécuté complet exporté depuis Databricks** (code + sorties graphiques intégrées).
-- `Steam_databricks_executed.ipynb` : Notebook PySpark complet exécuté sur cluster.
+- `Steam_databricks_executed.ipynb` : Notebook PySpark complet exécuté sur cluster avec cellules de sorties.
+- `Steam_video_games_analysis.ipynb` : Notebook PySpark modulaire prêt pour exécution directe sur cluster Databricks.
 - `Steam_presentation.pptx` : Support de soutenance 8 slides avec captures et graphiques Databricks.
 - `assets/` : Graphiques décisionnels haute résolution (Sorties & COVID, Pricing, Revenus & Multi-OS).
