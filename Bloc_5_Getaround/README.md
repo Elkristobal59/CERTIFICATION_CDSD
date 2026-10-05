@@ -51,6 +51,44 @@ Analyse d'arbitrage (*Trade-off*) entre le volume de locations annulées évité
 | `POST` | `/predict/batch` | Inférence groupée pour gestionnaires de flotte |
 | `GET` | `/docs` | Documentation interactive Swagger UI avec console de test intégrée |
 
+### 💻 Exemples d'appels à l'API (`/predict`)
+
+#### 1. En Python (`requests`) — Format recommandé ou legacy
+```python
+import requests
+
+url = "https://elkristobal59-getaround-pricing-api.hf.space/predict"
+payload = {
+    "model_key": "Renault",
+    "mileage": 50000,
+    "engine_power": 110,
+    "fuel": "diesel",
+    "paint_color": "black",
+    "car_type": "estate",
+    "private_parking_available": True,
+    "has_gps": True,
+    "has_air_conditioning": True,
+    "automatic_car": False,
+    "has_getaround_connect": True,
+    "has_speed_regulator": True,
+    "winter_tires": False
+}
+
+response = requests.post(url, json=payload)
+print(response.json())
+# {'prediction': [145.47], 'predicted_price_per_day': 145.47, 'rounded_price': 145, 'currency': 'EUR', 'recommended_range': {'min_price': 134, 'max_price': 156}}
+```
+
+#### 2. En ligne de commande via `curl` (Format Jedha `{"input": [[...]]}`)
+```bash
+curl -i -H "Content-Type: application/json" \
+     -X POST \
+     -d '{"input": [["Peugeot", 75000, 120, "diesel", "black", "sedan", 1, 1, 1, 0, 1, 1, 0]]}' \
+     https://elkristobal59-getaround-pricing-api.hf.space/predict
+```
+*Documentation détaillée disponible dans [GUIDE_UTILISATION_API_DOCS.md](file:///d:/PROJETS%20JEDHA/CERTIFICATION_CDSD/Bloc_5_Getaround/GUIDE_UTILISATION_API_DOCS.md).*
+
+
 ---
 
 ## 🚀 Architecture de Déploiement MLOps (Production-Ready)

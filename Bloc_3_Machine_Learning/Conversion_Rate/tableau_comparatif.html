@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+  }
+  .table-container {
+    width: 980px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+  }
+  .table-header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .table-title {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .table-subtitle {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 3px;
+  }
+  .badge-metric {
+    background: #3b82f6;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 13px;
+  }
+  th {
+    background: #f1f5f9;
+    color: #334155;
+    font-weight: 700;
+    padding: 12px 14px;
+    border-bottom: 2px solid #cbd5e1;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  td {
+    padding: 13px 14px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #1e293b;
+    vertical-align: middle;
+  }
+  .model-name {
+    text-align: left;
+    font-weight: 700;
+    padding-left: 20px;
+  }
+  .row-champion {
+    background: #f5f3ff !important;
+    border-top: 2px solid #8b5cf6;
+    border-bottom: 2px solid #8b5cf6;
+  }
+  .row-champion td {
+    color: #5b21b6;
+    font-weight: 800;
+    border-bottom: 2px solid #8b5cf6;
+  }
+  .row-champion .model-name {
+    color: #6d28d9;
+    font-size: 13.5px;
+  }
+  .champion-badge {
+    background: #7c3aed;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .score-champion {
+    font-size: 14.5px;
+    color: #7c3aed;
+    font-weight: 900;
+  }
+  .score-high {
+    font-weight: 700;
+  }
+  .tag-good {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .tag-blackbox {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #fee2e2;
+    color: #b91c1c;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .tag-neutral {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  tr:nth-child(even):not(.row-champion) {
+    background-color: #f8fafc;
+  }
+  .table-footer {
+    background: #f8fafc;
+    padding: 12px 20px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #334155;
+  }
+  .footer-icon {
+    font-size: 16px;
+  }
+  .footer-highlight {
+    font-weight: 700;
+    color: #6d28d9;
+  }
+</style>
+</head>
+<body>
+
+<div class="table-container">
+  <div class="table-header">
+    <div>
+      <div class="table-title">BENCHMARK COMPARATIF DES MODÈLES (SLIDE 7)</div>
+      <div class="table-subtitle">Évaluation sur jeu de validation indépendant (56 916 sessions — Split stratifié 80/20)</div>
+    </div>
+    <div class="badge-metric">Métrique Officielle : F1-Score</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: left; padding-left: 20px;">Modèle Évalué</th>
+        <th>Seuil &theta;</th>
+        <th>F1-Score</th>
+        <th>Rappel</th>
+        <th>Précision</th>
+        <th>ROC-AUC</th>
+        <th>Latence Inférence</th>
+        <th>Explicabilité</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="model-name">Baseline LogReg (1 variable : Pages)</td>
+        <td>0,50</td>
+        <td>0,7055</td>
+        <td>61,06 %</td>
+        <td>83,53 %</td>
+        <td>0,9764</td>
+        <td>&lt; 1 ms</td>
+        <td><span class="tag-neutral">Mono-variable</span></td>
+      </tr>
+      <tr>
+        <td class="model-name">LogReg Complète (Seuil standard)</td>
+        <td>0,50</td>
+        <td>0,7678</td>
+        <td>68,90 %</td>
+        <td>86,70 %</td>
+        <td>0,9869</td>
+        <td>&lt; 2 ms</td>
+        <td><span class="tag-good">Totale (Odds Ratios)</span></td>
+      </tr>
+      <tr class="row-champion">
+        <td class="model-name">
+          LogReg Optimisée (Seuil 0,45)
+          <span class="champion-badge">CHAMPION 🏆</span>
+        </td>
+        <td><strong>0,45</strong></td>
+        <td class="score-champion">0,7772</td>
+        <td><strong>71,90 %</strong></td>
+        <td>84,56 %</td>
+        <td><strong>0,9869</strong></td>
+        <td><strong>&lt; 2 ms</strong></td>
+        <td><span class="tag-good">100 % Transparente</span></td>
+      </tr>
+      <tr>
+        <td class="model-name">Random Forest (Tuned)</td>
+        <td>0,43</td>
+        <td>0,7611</td>
+        <td>75,49 %</td>
+        <td>76,72 %</td>
+        <td>0,9844</td>
+        <td>~ 15 ms</td>
+        <td><span class="tag-blackbox">Boîte noire (Arbres)</span></td>
+      </tr>
+      <tr>
+        <td class="model-name">XGBoost Classifier</td>
+        <td>0,43</td>
+        <td class="score-high">0,7763</td>
+        <td>73,80 %</td>
+        <td>81,90 %</td>
+        <td>0,9858</td>
+        <td>~ 10 ms</td>
+        <td><span class="tag-blackbox">Boîte noire (Boosting)</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="table-footer">
+    <div class="footer-icon">💡</div>
+    <div>
+      <span class="footer-highlight">Arbitrage d'Ingénieur (Rasoir d'Ockham) :</span> 
+      La Régression Logistique surpasse XGBoost au F1-Score (<strong>0,7772 vs 0,7763</strong>), 
+      s'exécute <strong>5x plus vite</strong> (&lt; 2 ms vs 10 ms) et offre une <strong>explicabilité mathématique directe</strong> pour le métier.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

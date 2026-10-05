@@ -57,7 +57,7 @@ Organisation complète des flux de données entre l'interface Streamlit, le stoc
 
 ## 📂 Contenu du Répertoire
 - `CliNER_presentation.pptx` : Support de présentation officiel (soutenance finale 10 min Demoday).
-- `CliNER_project_overview.ipynb` : Notebook de synthèse technique et d'évaluation face au Gold Standard CHIA.
+- `CliNER_benchmark_evaluation.ipynb` : Notebook d'évaluation comparative rigoureuse (Dictionary Floor vs. Qwen Zero-Shot vs. Qwen 7B LoRA sur CHIA).
 - `app/` : Application Web Streamlit avec surlignage d'entités médicales en direct.
 - `api/` : API backend FastAPI exposant les endpoints d'inférence (NER & RAG).
 - `scripts/` : Scripts d'inférence LoRA (`inference_qwen.py`) et d'ingestion/scraping en direct (`live_scraper.py`).
