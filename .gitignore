@@ -39,6 +39,8 @@ fiches_revision/
 AIDE_MEMOIRE_*
 *AIDE_MEMOIRE*
 GUIDE_SOUTENANCE_*
+GUIDE_UTILISATION_*
+*GUIDE_UTILISATION*
 create_livrables_zip.py
 *.pdf
 
