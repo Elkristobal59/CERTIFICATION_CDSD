@@ -86,7 +86,6 @@ curl -i -H "Content-Type: application/json" \
      -d '{"input": [["Peugeot", 75000, 120, "diesel", "black", "sedan", 1, 1, 1, 0, 1, 1, 0]]}' \
      https://elkristobal59-getaround-pricing-api.hf.space/predict
 ```
-*Documentation détaillée disponible dans [GUIDE_UTILISATION_API_DOCS.md](file:///d:/PROJETS%20JEDHA/CERTIFICATION_CDSD/Bloc_5_Getaround/GUIDE_UTILISATION_API_DOCS.md).*
 
 
 ---
