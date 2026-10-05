@@ -31,6 +31,7 @@ Thumbs.db
 *.tar.gz
 *.iso
 LIVRABLES_ZIP/
+testlivrables/
 
 # Fiches de révision, aide-mémoires et supports d'entraînement oral (non publiés sur GitHub)
 FICHE_REVISION_*
